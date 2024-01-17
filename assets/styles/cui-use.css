@@ -15,18 +15,21 @@ body {
     font-family: "poppins";
     display: flex;
     margin: 3px 0px;
+    width: 100%;
+    height: 87vh;
 }
 
 /* left aside css  start */
 .left-doc {
     background-color: var(--white-color);
     width: 22%;
-    height: 100vh;
-    padding: 40px 20px 20px 20px;
+    height: 100%;
+    padding: 21px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 0px 10px 0px 0px;
     z-index: 99;
 }
@@ -53,8 +56,10 @@ body {
 .menu h3 {
     font-size: 1.4rem;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    margin-left: -25px;
+    gap: 10px;
     color: var(--dark-blue-color);
 }
 
@@ -63,15 +68,19 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 4px;
 }
 
 .menu li {
     list-style: none;
-    margin: 15px 0px 15px 20px;
+    margin: 10px 0px 20px 20px;
     font-size: 1.1rem;
-    border-radius: 5px;
-    padding: 4px;
+    border-radius: 8px;
     color: #a4629d;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-2 .box-icon {
@@ -79,7 +88,7 @@ body {
 }
 
 .menu li:hover {
-    background-color: #f5f7ec;
+    background-color: #f1f4b4;
     cursor: pointer;
 }
 
@@ -88,51 +97,83 @@ body {
 /* right doc css start */
 .right-doc {
     width: 78%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background-color: #3a1b7b; */
 }
-.doc::-webkit-scrollbar {
+
+.right-doc::-webkit-scrollbar {
     width: 13px;
     border-radius: 10px;
 }
 
-.doc::-webkit-scrollbar-track {
+.right-doc::-webkit-scrollbar-track {
     background: #f2e5ed;
     border-radius: 10px;
 }
 
-.doc::-webkit-scrollbar-thumb {
+.right-doc::-webkit-scrollbar-thumb {
     background: #a0a0e9;
     border-radius: 10px;
 }
 
-.doc::-webkit-scrollbar-thumb:hover {
+.right-doc::-webkit-scrollbar-thumb:hover {
     background: #3a1b7b;
 }
+
+.doc {
+    width: 100%;
+    /* background-color: aquamarine; */
+    border-radius: 8px 0px 0px 0px;
+    padding: 50px 30px 40px 40px;
+}
+
 /* intro doc css start*/
 
 .intro-doc {
-    width: 100%;
-    height: 100vh;
-    /* background-color: aquamarine; */
-    border-radius: 8px 0px 0px 0px;
+    height: 39rem;
+    /* background-color: #4c0f46; */
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     gap: 25px;
-    padding: 40px 30px 0px 40px;
-    overflow: auto;
     line-height: 33px;
 }
 
-.intro-doc h1 {
+.doc h1 {
     font-size: 2.6rem;
 }
 
-.intro-doc p {
+.doc p {
     font-size: 1rem;
 }
 
 /* intro doc css end */
+
+/* install css start */
+
+.install-doc {
+    /* background-color: aqua; */
+    height: 63rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    line-height: 29px;
+}
+
+.install-snipet {
+    width: 592px;
+    height: 131px;
+    border: 0;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+/* install css end */
 
 /* right doc css start */
 
@@ -162,14 +203,15 @@ body {
     .left-doc {
         display: none;
     }
-     /* right-doc tab */
 
-     .right-doc {
+    /* right-doc tab */
+
+    .right-doc {
         width: 100%;
     }
-    
+
     /* intro doc css start*/
-    
+
     .intro-doc {
         width: 100%;
         height: 100vh;
@@ -184,21 +226,32 @@ body {
         overflow: auto;
         line-height: 25px;
     }
-    
+
     .intro-doc h1 {
         font-size: 1.15rem;
     }
-    .intro-doc h2{
+
+    .intro-doc h2 {
         font-size: 1.2rem;
     }
-    .intro-doc h4{
+
+    .intro-doc h4 {
         font-size: 0.8rem;
     }
-    
+
     .intro-doc p {
         font-size: 0.8rem;
     }
+
+    .intro-doc {
+        height: 70vh;
+    }
+
+    .install-doc {
+        height: 70vh;
+    }
 }
+/* tab ends */
 
 /* media queries for mobile*/
 
@@ -211,6 +264,10 @@ body {
 
     #cross-icon-R {
         display: none;
+    }
+
+    .doc {
+        padding: 0px 30px 40px 40px;
     }
 
     .left-doc {
@@ -227,40 +284,61 @@ body {
     .left-doc {
         display: none;
     }
+
     /* right-doc mobile */
 
     .right-doc {
         width: 100%;
     }
-    
+
     /* intro doc css start*/
-    
-    .intro-doc {
+
+    .intro-doc,
+    .install-doc {
         width: 100%;
-        height: 100vh;
         /* background-color: aquamarine; */
-        border-radius: 8px 0px 0px 0px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 25px;
+        gap: 12px;
         padding: 20px 20px 0px 20px;
         overflow: auto;
         line-height: 25px;
     }
-    
-    .intro-doc h1 {
-        font-size: 1.15rem;
+
+    .intro-doc {
+        height: 70vh;
     }
-    .intro-doc h2{
+
+    .intro-doc h1,
+    .install-doc h1 {
+        font-size: 1.1rem;
+    }
+
+    .intro-doc h2 {
         font-size: 1.2rem;
     }
-    .intro-doc h4{
+
+    .intro-doc h4 {
         font-size: 0.8rem;
     }
-    
-    .intro-doc p {
+
+    .install-doc {
+        height: 66vh;
+        line-height: 21px;
+    }
+
+    .intro-doc p,
+    .install-doc p {
+        font-size: 0.7rem;
+    }
+
+    .install-doc h3 {
         font-size: 0.8rem;
+    }
+
+    .install-snipet {
+        width: 292px;
+        height: 131px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
     }
 }
