@@ -1,4 +1,4 @@
-const sidebar = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.left-sidebar');
 const hidehamburger = document.querySelector('#hamburger');
 const hidecross = document.querySelector('#cross-icon');
 const navbar = document.querySelector('.navbar');
