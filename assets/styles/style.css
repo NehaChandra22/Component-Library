@@ -357,8 +357,8 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #231557;
+  /* align-items: center; */
+  /* background-color: #231557; */
 }
 
 .footer-icons {
@@ -384,6 +384,8 @@ main {
   color: #eae1f4;
   width: 100%;
   background-color: #462f84;
+  bottom: 0px;
+ 
 }
 
 .up {

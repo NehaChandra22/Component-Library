@@ -9,7 +9,7 @@ const Lightmode = document.querySelector('.light-mode');
 const body = document.querySelector('body');
 const linkcont = document.querySelector('.link-container');
 const aside = document.querySelector('aside')
-
+const rightDoc = document.querySelector(".right-doc")
 function showSidebar() {
     sidebar.style.display = 'block';
     hidecrossL.style.display = 'block';
@@ -26,8 +26,8 @@ function showAside() {
     aside.style.display = 'block';
     hidecrossR.style.display = 'block';
     hidehamburgerR.style.display = 'none';
-    
-}
+    rightDoc.style.display="none"
+;}
 function hideAside() {
     aside.style.display = 'none';
     hidehamburgerR.style.display = "block";
