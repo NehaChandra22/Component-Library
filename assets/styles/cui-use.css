@@ -89,7 +89,24 @@ body {
 .right-doc {
     width: 78%;
 }
+.doc::-webkit-scrollbar {
+    width: 13px;
+    border-radius: 10px;
+}
 
+.doc::-webkit-scrollbar-track {
+    background: #f2e5ed;
+    border-radius: 10px;
+}
+
+.doc::-webkit-scrollbar-thumb {
+    background: #a0a0e9;
+    border-radius: 10px;
+}
+
+.doc::-webkit-scrollbar-thumb:hover {
+    background: #3a1b7b;
+}
 /* intro doc css start*/
 
 .intro-doc {
