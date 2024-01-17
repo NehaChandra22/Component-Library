@@ -1,153 +1,153 @@
 @import url(./style.css);
 
 body {
-    background-image: none;
-    background-color: var(--white-color);
+  background-image: none;
+  background-color: var(--white-color);
 }
 
 .nav-items .item-active {
-    background-color: var(--light-purple-color);
-    border-radius: 10px;
-    padding: 5px;
+  background-color: var(--light-purple-color);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .main-doc {
-    font-family: "poppins";
-    display: flex;
-    margin: 3px 0px;
-    width: 100%;
-    height: 87vh;
+  font-family: "poppins";
+  display: flex;
+  margin: 3px 0px;
+  width: 100%;
+  height: 87vh;
 }
 
 /* left aside css  start */
 .left-doc {
-    background-color: var(--white-color);
-    width: 22%;
-    height: 100%;
-    padding: 21px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border-radius: 0px 10px 0px 0px;
-    z-index: 99;
+  background-color: var(--white-color);
+  width: 22%;
+  height: 100%;
+  padding: 21px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 0px 10px 0px 0px;
+  z-index: 99;
 }
 
 .left-doc::-webkit-scrollbar {
-    width: 13px;
-    border-radius: 10px;
+  width: 13px;
+  border-radius: 10px;
 }
 
 .left-doc::-webkit-scrollbar-track {
-    background: #f2e5ed;
-    border-radius: 10px;
+  background: #f2e5ed;
+  border-radius: 10px;
 }
 
 .left-doc::-webkit-scrollbar-thumb {
-    background: #a0a0e9;
-    border-radius: 10px;
+  background: #a0a0e9;
+  border-radius: 10px;
 }
 
 .left-doc::-webkit-scrollbar-thumb:hover {
-    background: #3a1b7b;
+  background: #3a1b7b;
 }
 
 .menu h3 {
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: -25px;
-    gap: 10px;
-    color: var(--dark-blue-color);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -25px;
+  gap: 10px;
+  color: var(--dark-blue-color);
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4px;
 }
 
 .menu li {
-    list-style: none;
-    margin: 10px 0px 20px 20px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    color: #a4629d;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  list-style: none;
+  margin: 10px 0px 20px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: #a4629d;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-2 .box-icon {
-    font-size: 2.14rem;
+  font-size: 2.14rem;
 }
 
 .menu li:hover {
-    background-color: #f1f4b4;
-    cursor: pointer;
+  background-color: #f1f4b4;
+  cursor: pointer;
 }
 
 /* left aside css end */
 
 /* right doc css start */
 .right-doc {
-    width: 78%;
-    height: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
-    /* background-color: #3a1b7b; */
+  width: 78%;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color: #3a1b7b; */
 }
 
 .right-doc::-webkit-scrollbar {
-    width: 13px;
-    border-radius: 10px;
+  width: 13px;
+  border-radius: 10px;
 }
 
 .right-doc::-webkit-scrollbar-track {
-    background: #f2e5ed;
-    border-radius: 10px;
+  background: #f2e5ed;
+  border-radius: 10px;
 }
 
 .right-doc::-webkit-scrollbar-thumb {
-    background: #a0a0e9;
-    border-radius: 10px;
+  background: #a0a0e9;
+  border-radius: 10px;
 }
 
 .right-doc::-webkit-scrollbar-thumb:hover {
-    background: #3a1b7b;
+  background: #3a1b7b;
 }
 
 .doc {
-    width: 100%;
-    /* background-color: aquamarine; */
-    border-radius: 8px 0px 0px 0px;
-    padding: 50px 30px 40px 40px;
+  width: 100%;
+  /* background-color: aquamarine; */
+  border-radius: 8px 0px 0px 0px;
+  padding: 50px 30px 40px 40px;
 }
 
 /* intro doc css start*/
 
 .intro-doc {
-    height: 39rem;
-    /* background-color: #4c0f46; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 25px;
-    line-height: 33px;
+  height: 39rem;
+  /* background-color: #4c0f46; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 33px;
 }
 
 .doc h1 {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
 .doc p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* intro doc css end */
@@ -155,22 +155,22 @@ body {
 /* install css start */
 
 .install-doc {
-    /* background-color: aqua; */
-    height: 63rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 25px;
-    line-height: 29px;
+  /* background-color: aqua; */
+  height: 63rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 29px;
 }
 
 .install-snipet {
-    width: 592px;
-    height: 131px;
-    border: 0;
-    transform: scale(1);
-    overflow: hidden;
+  width: 592px;
+  height: 131px;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
 }
 
 /* install css end */
@@ -179,166 +179,148 @@ body {
 
 /* media queries for tab*/
 @media screen and (max-width: 998px) {
+  /* aside */
+  #hamburger-R {
+    display: block;
+  }
 
-    /* aside */
-    #hamburger-R {
-        display: block;
-    }
+  #cross-icon-R {
+    display: none;
+  }
 
-    #cross-icon-R {
-        display: none;
-    }
+  .left-doc {
+    width: 100%;
+    height: 100vh;
+    border: 0.5px solid grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+  }
 
-    .left-doc {
-        width: 100%;
-        height: 100vh;
-        border: 0.5px solid grey;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-y: scroll;
-    }
+  .left-doc {
+    display: none;
+  }
 
-    .left-doc {
-        display: none;
-    }
+  /* right-doc tab */
 
-    /* right-doc tab */
+  .right-doc {
+    width: 100%;
+  }
 
-    .right-doc {
-        width: 100%;
-    }
+  /* intro doc css start*/
 
-    /* intro doc css start*/
+  .intro-doc {
+    width: 100%;
+    height: 100vh;
 
-    .intro-doc {
-        width: 100%;
-        height: 100vh;
-        /* background-color: aquamarine; */
-        border-radius: 8px 0px 0px 0px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 25px;
-        padding: 20px 20px 0px 20px;
-        overflow: auto;
-        line-height: 25px;
-    }
+    border-radius: 8px 0px 0px 0px;
 
-    .intro-doc h1 {
-        font-size: 1.15rem;
-    }
+    line-height: 25px;
+  }
 
-    .intro-doc h2 {
-        font-size: 1.2rem;
-    }
+  .intro-doc h1 {
+    font-size: 1.15rem;
+  }
 
-    .intro-doc h4 {
-        font-size: 0.8rem;
-    }
+  .intro-doc h2 {
+    font-size: 1.2rem;
+  }
 
-    .intro-doc p {
-        font-size: 0.8rem;
-    }
+  .intro-doc h4 {
+    font-size: 0.8rem;
+  }
 
-    .intro-doc {
-        height: 70vh;
-    }
+  .intro-doc p {
+    font-size: 0.8rem;
+  }
 
-    .install-doc {
-        height: 70vh;
-    }
+  .intro-doc {
+    height: 70vh;
+  }
+
+  .install-doc {
+    height: 70vh;
+  }
 }
 /* tab ends */
 
 /* media queries for mobile*/
 
 @media screen and (max-width: 468px) {
+  /* aside */
+  #hamburger-R {
+    display: block;
+  }
 
-    /* aside */
-    #hamburger-R {
-        display: block;
-    }
+  #cross-icon-R {
+    display: none;
+  }
 
-    #cross-icon-R {
-        display: none;
-    }
+  .doc {
+    padding: 0px 30px 40px 40px;
+  }
 
-    .doc {
-        padding: 0px 30px 40px 40px;
-    }
+  .left-doc {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
 
-    .left-doc {
-        width: 200%;
-        height: 100vh;
-        border: 0.5px solid grey;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-y: scroll;
-    }
+  .left-doc {
+    display: none;
+  }
 
-    .left-doc {
-        display: none;
-    }
+  /* right-doc mobile */
 
-    /* right-doc mobile */
+  .right-doc {
+    width: 100%;
+  }
 
-    .right-doc {
-        width: 100%;
-    }
+  /* intro doc css start*/
 
-    /* intro doc css start*/
+  .intro-doc,
+  .install-doc {
+    width: 100%;
+    gap: 12px;
+    padding: 20px 20px 0px 20px;
+    line-height: 25px;
+  }
 
-    .intro-doc,
-    .install-doc {
-        width: 100%;
-        /* background-color: aquamarine; */
-        gap: 12px;
-        padding: 20px 20px 0px 20px;
-        overflow: auto;
-        line-height: 25px;
-    }
+  .intro-doc {
+    height: 70vh;
+  }
 
-    .intro-doc {
-        height: 70vh;
-    }
+  .intro-doc h1,
+  .install-doc h1 {
+    font-size: 1.1rem;
+  }
 
-    .intro-doc h1,
-    .install-doc h1 {
-        font-size: 1.1rem;
-    }
+  .intro-doc h2 {
+    font-size: 1.2rem;
+  }
 
-    .intro-doc h2 {
-        font-size: 1.2rem;
-    }
+  .intro-doc h4 {
+    font-size: 0.8rem;
+  }
 
-    .intro-doc h4 {
-        font-size: 0.8rem;
-    }
+  .install-doc {
+    height: 66vh;
+    line-height: 21px;
+  }
 
-    .install-doc {
-        height: 66vh;
-        line-height: 21px;
-    }
+  .intro-doc p,
+  .install-doc p {
+    font-size: 0.7rem;
+  }
 
-    .intro-doc p,
-    .install-doc p {
-        font-size: 0.7rem;
-    }
+  .install-doc h3 {
+    font-size: 0.8rem;
+  }
 
-    .install-doc h3 {
-        font-size: 0.8rem;
-    }
-
-    .install-snipet {
-        width: 292px;
-        height: 131px;
-        border: 0;
-        transform: scale(1);
-        overflow: hidden;
-    }
+  .install-snipet {
+    width: 292px;
+    height: 131px;
+  }
 }
