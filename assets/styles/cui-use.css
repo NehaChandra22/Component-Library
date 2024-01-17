@@ -1,0 +1,99 @@
+@import url(./style.css);
+.nav-items .item-active {
+  background-color: var(--light-purple-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+.main-doc {
+  font-family: "poppins";
+  display: flex;
+  margin: 3px 0px;
+}
+/* left aside css  start */
+.left-doc {
+  background-color: var(--white-color);
+  width: 22%;
+  height: 100vh;
+  border: 0.5px solid grey;
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  border-radius: 0px 10px 0px 0px;
+}
+::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2e5ed;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0a0e9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a1b7b;
+}
+
+.menu h3 {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--dark-blue-color);
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu li {
+  list-style: none;
+  margin: 15px 0px 15px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 4px;
+  color: #a4629d;
+}
+
+.menu-2 .box-icon {
+  font-size: 2.14rem;
+}
+
+.menu li:hover {
+  background-color: #f5f7ec;
+  cursor: pointer;
+}
+/* left aside css end */
+
+/* media queries for tab*/
+@media screen and (max-width: 998px) {
+}
+/* media queries for mobile*/
+
+@media screen and (max-width: 468px) {
+  /* aside */
+  #hamburger-R {
+    display: block;
+  }
+  #cross-icon-R {
+    display: none;
+  }
+  .left-doc {
+    width: 100%;
+    height: 100vh;
+    border: 0.5px solid grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+  }
+}
