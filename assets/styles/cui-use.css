@@ -1,6 +1,6 @@
 @import url(./style.css);
 @import url(./accordian.css);
-
+@import url(./alert.css);
 body {
   background-image: none;
   background-color: var(--white-color);
@@ -333,8 +333,7 @@ body {
   .install-doc {
     height: 64rem;
     line-height: 29px;
-    gap: 22px;
-    background-color: #3a1b7b;
+    gap: 22px;    
   }
   .install-doc #code-snippet {
     height: 145px;
