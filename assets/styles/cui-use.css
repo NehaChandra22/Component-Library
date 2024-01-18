@@ -263,8 +263,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
-  line-height: 24px;
-  background-color: red;
+  line-height: 27px;
 }
 
 /* alert css end */
@@ -278,8 +277,8 @@ body {
 /* media queries for tab*/
 @media screen and (max-width: 998px) {
   #code-snippet {
-    width: 500px;
-    height: 250px;
+    width: 520px;
+    height: 280px;
   }
 
   /* aside */
@@ -328,12 +327,14 @@ body {
   .intro-doc h1,
   .install-doc h1,
   .browser-doc h1,
-  .accordian-doc h1 {
+  .accordian-doc h1,
+  .alert-doc h1 {
     font-size: 1.5rem;
   }
 
   .intro-doc h2 .browser-doc h2,
-  .accordian-doc h2 {
+  .accordian-doc h2,
+  .alert-doc h2 {
     font-size: 1.3rem;
   }
 
@@ -343,7 +344,8 @@ body {
 
   .intro-doc p,
   .browser-doc p,
-  .accordian-doc p {
+  .accordian-doc p,
+  .alert-doc p {
     font-size: 1rem;
   }
 
@@ -369,7 +371,11 @@ body {
 
   /* accordian- */
   .accordian-doc {
-    height: 103.6rem;
+    height: 116.6rem;
+  }
+  .alert-doc {
+    background-color: #3a1b7b;
+    height: 76rem;
   }
 }
 
@@ -393,10 +399,6 @@ body {
     padding: 20px;
   }
 
-  .doc {
-    padding: 0px 30px 0px 40px;
-  }
-
   .left-doc {
     display: none;
   }
@@ -414,14 +416,16 @@ body {
   }
 
   /* intro doc css start*/
-
+  .doc {
+    padding: 20px 20px 0px 20px;
+  }
   .intro-doc,
   .install-doc,
   .browser-doc,
-  .accordian-doc {
+  .accordian-doc,
+  .alert-doc {
     width: 100%;
     gap: 12px;
-    padding: 20px 20px 0px 20px;
     line-height: 21px;
   }
 
@@ -432,7 +436,8 @@ body {
   .intro-doc h1,
   .install-doc h1,
   .browser-doc h1,
-  .accordian-doc h1 {
+  .accordian-doc h1,
+  .alert-doc h1 {
     font-size: 1.1rem;
   }
 
@@ -454,12 +459,15 @@ body {
   .install-doc p,
   .browser-doc p,
   .browser-doc li,
-  .accordian-doc p {
+  .accordian-doc p,
+  .alert-doc p,
+  .alert-doc li {
     font-size: 0.7rem;
   }
 
   .install-doc h3,
-  .browser-doc h3 {
+  .browser-doc h3,
+  .alert-doc h3 {
     font-size: 0.8rem;
   }
 
@@ -479,9 +487,14 @@ body {
   /* accordion */
 
   .accordian-doc {
-    height: 75.6rem;
+    height: 99.6rem;
+  }
+  /* alert */
+  .alert-doc {
+    line-height: 20px;
   }
 
+ 
   .footer-line.doc {
     display: flex;
     position: relative;

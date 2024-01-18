@@ -71,3 +71,15 @@
 .alert-doc .danger .icon {
   background-color: #ec4d2b;
 }
+
+
+@media screen and (max-width: 468px){
+    .Alert .alert {
+        min-width: 200px;
+        margin-bottom: 0.8rem;
+      }
+      .Alert .alert .icon svg{
+        width: 20px;
+        height: 20px;
+      }
+}
