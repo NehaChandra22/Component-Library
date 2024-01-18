@@ -435,39 +435,28 @@ body {
   }
 
   /* intro doc css start*/
-  .doc {
-    padding: 20px 20px 0px 20px;
-  }
+  
 
-  .intro-doc,
-  .install-doc,
-  .browser-doc,
-  .accordian-doc,
-  .alert-doc {
+ .doc{
     width: 100%;
     gap: 12px;
     line-height: 21px;
+    padding: 20px 20px 0px 20px;
   }
 
   .intro-doc {
     height: 29rem;
   }
 
-  .intro-doc h1,
-  .install-doc h1,
-  .browser-doc h1,
-  .accordian-doc h1,
-  .alert-doc h1 {
+  .doc h1 {
+    font-size: 1.2rem;
+  }
+
+  .doc h2 {
     font-size: 1.1rem;
   }
 
-  .intro-doc h2,
-  .browser-doc h2,
-  .accordian-doc h2 {
-    font-size: 1.1rem;
-  }
-
-  .intro-doc h4 {
+  .doc h4 {
     font-size: 0.8rem;
   }
 
@@ -475,19 +464,11 @@ body {
     height: 49rem;
   }
 
-  .intro-doc p,
-  .install-doc p,
-  .browser-doc p,
-  .browser-doc li,
-  .accordian-doc p,
-  .alert-doc p,
-  .alert-doc li {
+  .doc li , .doc p {
     font-size: 0.7rem;
   }
 
-  .install-doc h3,
-  .browser-doc h3,
-  .alert-doc h3 {
+ .doc h3{
     font-size: 0.8rem;
   }
 
@@ -514,7 +495,10 @@ body {
   .alert-doc {
     line-height: 20px;
   }
-
+/* avatar */
+.avatar-doc {
+  line-height: 20px;
+}
   .footer-line.doc {
     display: flex;
     position: relative;

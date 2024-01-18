@@ -34,3 +34,28 @@
   height: 3rem;
   width: 3rem;
 }
+
+@media screen and (max-width: 468px) {
+  .avatar-cont {
+    height: 6rem;
+    width: 90%;
+    margin-top: 1rem;
+    padding: 0.2rem;
+  }
+  .avatar-large {
+    height: 5rem;
+    width: 5rem;
+  }
+  .avatar-medium {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .avatar-small {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .avatar-big {
+    height: 4rem;
+    width: 4rem;
+  }
+}
