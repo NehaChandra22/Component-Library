@@ -10,13 +10,21 @@ body {
   border-radius: 10px;
   padding: 5px;
 }
+.navbar.docs {
+  height: 3.9rem;
+  position: fixed;
+  z-index: 99999;
+}
 
 .main-doc {
+  position: relative;
+  top: 69px;
   font-family: "poppins";
   display: flex;
-  margin: 3px 0px;
+  margin: 3px 0px 0px 0px;
   width: 100%;
   height: 87vh;
+  z-index: 9999;
 }
 
 /* left aside css  start */
@@ -32,6 +40,7 @@ body {
   overflow-x: hidden;
   border-radius: 0px 10px 0px 0px;
   z-index: 99;
+  z-index: 9999;
 }
 
 .left-doc::-webkit-scrollbar {
@@ -82,7 +91,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.menu a {
+  text-decoration: none;
+}
 .menu-2 .box-icon {
   font-size: 2.14rem;
 }
@@ -101,6 +112,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   /* background-color: #3a1b7b; */
+  z-index: 9999;
 }
 
 .right-doc::-webkit-scrollbar {
@@ -132,7 +144,7 @@ body {
 /* intro doc css start*/
 
 .intro-doc {
-  height: 39rem;
+  height: 40rem;
   /* background-color: #4c0f46; */
   display: flex;
   justify-content: flex-start;
@@ -156,7 +168,7 @@ body {
 
 .install-doc {
   /* background-color: aqua; */
-  height: 63rem;
+  height: 54rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -175,7 +187,40 @@ body {
 
 /* install css end */
 
-/* right doc css start */
+/* browser css start */
+.browser-doc {
+  height: 63.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 29px;
+}
+
+.navbar.doc {
+  width: 900px;
+  margin: 0px;
+  padding: 29px;
+}
+.nav-items.docs {
+  width: 50%;
+  padding: 0px;
+}
+.title.docs {
+  padding: 0px;
+}
+
+.nav-docs img {
+  width: 130px;
+  height: 30px;
+}
+/* browser css end */
+
+.footer-line.doc {
+  display: none;
+}
+/* right doc css end */
 
 /* media queries for tab*/
 @media screen and (max-width: 998px) {
@@ -213,7 +258,7 @@ body {
 
   .intro-doc {
     width: 100%;
-    height: 100vh;
+    height: 33rem;
 
     border-radius: 8px 0px 0px 0px;
 
@@ -221,27 +266,37 @@ body {
   }
 
   .intro-doc h1 {
-    font-size: 1.15rem;
+    font-size: 2rem;
   }
 
   .intro-doc h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .intro-doc h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .intro-doc p {
-    font-size: 0.8rem;
-  }
-
-  .intro-doc {
-    height: 70vh;
+    font-size: 1rem;
   }
 
   .install-doc {
-    height: 70vh;
+    height: 55rem;
+  }
+  .browser-doc {
+    height: 58rem;
+    line-height: 21px;
+    display: flex;
+    gap: 22px;
+  }
+  .navbar.doc {
+    width: 140%;
+    margin: 0px;
+    padding: 9px;
+  }
+  .footer-line.doc {
+    display: flex;
   }
 }
 /* tab ends */
@@ -258,14 +313,13 @@ body {
     display: none;
   }
 
-  .doc {
-    padding: 0px 30px 40px 40px;
-  }
-
   .left-doc {
     width: 100%;
     height: 100vh;
     padding: 20px;
+  }
+  .doc {
+    padding: 0px 30px 0px 40px;
   }
 
   .left-doc {
@@ -276,6 +330,7 @@ body {
 
   .right-doc {
     width: 100%;
+    height: 100vh;
   }
 
   /* intro doc css start*/
@@ -285,19 +340,21 @@ body {
     width: 100%;
     gap: 12px;
     padding: 20px 20px 0px 20px;
-    line-height: 25px;
+    line-height: 21px;
   }
 
   .intro-doc {
-    height: 70vh;
+    height: 29rem;
   }
 
   .intro-doc h1,
-  .install-doc h1 {
+  .install-doc h1,
+  .browser-doc h1 {
     font-size: 1.1rem;
   }
 
-  .intro-doc h2 {
+  .intro-doc h2,
+  .browser-doc h2 {
     font-size: 1.2rem;
   }
 
@@ -306,12 +363,13 @@ body {
   }
 
   .install-doc {
-    height: 66vh;
-    line-height: 21px;
+    height: 49rem;
   }
 
   .intro-doc p,
-  .install-doc p {
+  .install-doc p,
+  .browser-doc p,
+  .browser-doc li {
     font-size: 0.7rem;
   }
 
@@ -322,5 +380,24 @@ body {
   .install-snipet {
     width: 292px;
     height: 131px;
+  }
+
+  /* broser css */
+  .browser-doc {
+    height: 58rem;
+    line-height: 21px;
+    display: flex;
+    gap: 10px;
+  }
+  .navbar.doc {
+    width: 295px;
+    margin: 0px;
+    padding: 9px;
+  }
+
+  .footer-line.doc {
+    display: flex;
+    position: relative;
+    bottom: -46px;
   }
 }

@@ -1,146 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/Images/favvv.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Catalyst UI</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/Images/favvv.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/styles/style.css" />
-  <title>Catalyst UI</title>
-</head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <div class="title">
+        <a href="./index.html"> <h1>CatalystUI</h1></a>
+      </div>
+      <div class="nav-items">
+        <div class="items">
+          <a href="#about-us">Home</a>
+        </div>
+        <div class="items">
+          <a href="./documentation.html">Documentation</a>
+        </div>
+        <div class="git"><i class="fa-brands fa-square-github"></i></div>
+        <div class="dark-mode">
+          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+        </div>
+        <div class="light-mode">
+          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+      <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hamburger-icon" id="cross-icon-L" onclick="hideSidebar()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!-- navbar-ends -->
+    <!-- media-query-navbar-start -->
+    <div class="left-sidebar">
+      <div class="nav-items">
+        <div class="items">
+          <a href="./index.html">Home</a>
+        </div>
 
-<body>
-  <!-- navbar start -->
-  <nav class="navbar">
-    <div class="title">
-      <h1>CatalystUI</h1>
-    </div>
-    <div class="nav-items">
-      <div class="items">
-        <a href="#about-us">Home</a>
-      </div>
-      <div class="items">
-        <a href="./documentation.html">Documentation</a>
-      </div>
-      <div class="git"><i class="fa-brands fa-square-github"></i></div>
-      <div class="dark-mode">
-        <i onclick="darkmode()" class="fa-solid fa-moon"></i>
-      </div>
-      <div class="light-mode">
-        <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+        <div class="items">
+          <a href="./documentation.html">Documentation</a>
+        </div>
+        <div class="git"><i class="fa-brands fa-square-github"></i></div>
+        <div class="dark-mode">
+          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+        </div>
+        <div class="light-mode">
+          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+        </div>
       </div>
     </div>
-    <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-    <div class="hamburger-icon" id="cross-icon-L" onclick="hideSidebar()">
-      <i class="fa-solid fa-xmark"></i>
-    </div>
-  </nav>
-  <!-- navbar-ends -->
-  <!-- media-query-navbar-start -->
-  <div class="left-sidebar">
-    <div class="nav-items">
-      <div class="items">
-        <a href="#about-us">Home</a>
-      </div>
+    <!-- media-query-navbar-ends -->
 
-      <div class="items">
-        <a href="#items">Documentation</a>
-      </div>
-      <div class="git"><i class="fa-brands fa-square-github"></i></div>
-      <div class="dark-mode">
-        <i onclick="darkmode()" class="fa-solid fa-moon"></i>
-      </div>
-      <div class="light-mode">
-        <i onclick="lightmode()" class="fa-solid fa-moon"></i>
-      </div>
-    </div>
-  </div>
-  <!-- media-query-navbar-ends -->
-
-  <!-- main section starts -->
-  <main>
-    <!-- banner section starts -->
-    <section class="banner">
-      <div class="banner-heading">
-        <div class="heading-title">
-          <div class="logo-img">
-            <img src="./assets/Images/C.png" alt="" />
+    <!-- main section starts -->
+    <main>
+      <!-- banner section starts -->
+      <section class="banner">
+        <div class="banner-heading">
+          <div class="heading-title">
+            <div class="logo-img">
+              <img src="./assets/Images/C.png" alt="" />
+            </div>
+            <div class="title-text">
+              <h1>Catalyst UI</h1>
+            </div>
           </div>
-          <div class="title-text">
-            <h1>Catalyst UI</h1>
+          <div class="banner-caption">
+            <h2>Build fast, responsive sites with Catalyst UI</h2>
+            <h3>
+              Innovation, transformation, and acceleration in the realm of user
+              interface design. For efficient and accelerated design process.
+            </h3>
+          </div>
+          <div class="button">
+            <p>Explore >></p>
           </div>
         </div>
-        <div class="banner-caption">
-          <h2>Build fast, responsive sites with Catalyst UI</h2>
-          <h3>
-            Innovation, transformation, and acceleration in the realm of user
-            interface design. For efficient and accelerated design process.
-          </h3>
+        <div class="banner-img">
+          <img src="./assets/Images/home.png" alt="" />
         </div>
-        <div class="button">
-          <p>Explore >></p>
-        </div>
-      </div>
-      <div class="banner-img">
-        <img src="./assets/Images/home.png" alt="" />
-      </div>
-    </section>
-    <!-- banner section ends -->
-    <!-- /* CDN container css start*/ -->
+      </section>
+      <!-- banner section ends -->
+      <!-- /* CDN container css start*/ -->
 
-    <section class="link-container">
-      <div class="tag-icon"><i class="tag fa-solid fa-code"></i></div>
-      <div class="cdn-heading">
-        <h1>Get Started</h1>
-        <h2>
-          Jump right into building with CatalystUI — use the CDN links below.
-        </h2>
-      </div>
-      <div class="cdn-links">
-        <div class="css">
-          <h2>CSS Link -</h2>
-          <iframe class="css-snipet"
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=891.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fasset%252Fstyles%252Fcomponent-library.css%2522%253E"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+      <section class="link-container">
+        <div class="tag-icon"><i class="tag fa-solid fa-code"></i></div>
+        <div class="cdn-heading">
+          <h1>Get Started</h1>
+          <h2>
+            Jump right into building with CatalystUI — use the CDN links below.
+          </h2>
         </div>
-        <div class="javascript">
-          <h2>Javascript Link -</h2>
-          <iframe class="js-snipet"
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=891.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fassets%252Fjs%252Fcomponent-library.js%2522%253E%253C%252Fscript%253E%250A"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+        <div class="cdn-links">
+          <div class="css">
+            <h2>CSS Link -</h2>
+            <iframe
+              class="css-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=891.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fasset%252Fstyles%252Fcomponent-library.css%2522%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="javascript">
+            <h2>Javascript Link -</h2>
+            <iframe
+              class="js-snipet"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=891.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fassets%252Fjs%252Fcomponent-library.js%2522%253E%253C%252Fscript%253E%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <!-- /* CDN container css ends*/ -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <i class="social fa-brands fa-facebook"></i>
+        <i class="social fa-brands fa-github"></i>
+        <i class="social fa-brands fa-twitter"></i>
+        <i class="social fa-brands fa-linkedin"></i>
+        <i class="social fa-brands fa-instagram"></i>
+      </div>
+      <div class="footer-line">
+        <div class=""></div>
+        <p>© 2024 Copyright: CUI-COMPONENTS_LIBRARY</p>
+        <div class="up" onclick=" topFunction() ">
+          <i class="fa-solid fa-arrow-up"></i>
         </div>
       </div>
-      <!-- /* CDN container css ends*/ -->
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-icons">
-      <i class="social fa-brands fa-facebook"></i>
-      <i class="social fa-brands fa-github"></i>
-      <i class="social fa-brands fa-twitter"></i>
-      <i class="social fa-brands fa-linkedin"></i>
-      <i class="social fa-brands fa-instagram"></i>
-    </div>
-    <div class="footer-line">
-      <div class=""></div>
-      <p>© 2024 Copyright: CUI-COMPONENTS_LIBRARY</p>
-      <div class="up" onclick=" topFunction() ">
-        <i class="fa-solid fa-arrow-up"></i>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-    integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./assets/Js/script.js"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/Js/script.js"></script>
+  </body>
 </html>
