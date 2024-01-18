@@ -1,0 +1,36 @@
+.avatar-cont {
+  height: 16rem;
+  width: 90%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid var(--dark-blue-color);
+  padding: 2rem;
+}
+
+.avatar-container {
+  position: relative;
+}
+.avatar-container img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.avatar-large {
+  height: 10rem;
+  width: 10rem;
+}
+.avatar-big {
+  height: 8rem;
+  width: 8rem;
+}
+.avatar-medium {
+  height: 5rem;
+  width: 5rem;
+}
+.avatar-small {
+  height: 3rem;
+  width: 3rem;
+}

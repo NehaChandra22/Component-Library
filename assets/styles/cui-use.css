@@ -1,6 +1,8 @@
 @import url(./style.css);
 @import url(./accordian.css);
 @import url(./alert.css);
+@import url(./avatar.css);
+
 body {
   background-image: none;
   background-color: var(--white-color);
@@ -113,7 +115,7 @@ body {
 /* right doc css start */
 
 #code-snippet {
-  width: 992px;
+  width: 892px;
   height: 467px;
   border: 0;
   transform: scale(1);
@@ -257,7 +259,7 @@ body {
 
 /* alert css start */
 .alert-doc {
-  height: 135.6rem;
+  height: 95.6rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -267,6 +269,20 @@ body {
 }
 
 /* alert css end */
+/* avatar css start */
+.avatar-doc {
+  height: 77.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 27px;
+}
+
+.avatar-doc .avtar-frame {
+  margin-top: 3rem;
+}
 
 .footer-line.doc {
   display: none;
@@ -311,6 +327,7 @@ body {
     margin-top: 10px;
     gap: 15px;
   }
+
   .right-doc {
     width: 100%;
   }
@@ -354,6 +371,7 @@ body {
     line-height: 29px;
     gap: 22px;
   }
+
   .install-doc #code-snippet {
     height: 145px;
   }
@@ -373,6 +391,7 @@ body {
   .accordian-doc {
     height: 116.6rem;
   }
+
   .alert-doc {
     background-color: #3a1b7b;
     height: 76rem;
@@ -419,6 +438,7 @@ body {
   .doc {
     padding: 20px 20px 0px 20px;
   }
+
   .intro-doc,
   .install-doc,
   .browser-doc,
@@ -489,12 +509,12 @@ body {
   .accordian-doc {
     height: 99.6rem;
   }
+
   /* alert */
   .alert-doc {
     line-height: 20px;
   }
 
- 
   .footer-line.doc {
     display: flex;
     position: relative;
