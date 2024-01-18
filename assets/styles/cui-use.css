@@ -1,4 +1,5 @@
 @import url(./style.css);
+@import url(./accordian.css);
 
 body {
   background-image: none;
@@ -10,10 +11,12 @@ body {
   border-radius: 10px;
   padding: 5px;
 }
+
 .navbar.docs {
   height: 3.9rem;
   position: fixed;
   z-index: 99999;
+  top: 0;
 }
 
 .main-doc {
@@ -91,9 +94,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .menu a {
   text-decoration: none;
 }
+
 .menu-2 .box-icon {
   font-size: 2.14rem;
 }
@@ -106,6 +111,15 @@ body {
 /* left aside css end */
 
 /* right doc css start */
+
+#code-snippet {
+  width: 992px;
+  height: 467px;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+
 .right-doc {
   width: 78%;
   height: auto;
@@ -177,7 +191,7 @@ body {
   line-height: 29px;
 }
 
-.install-snipet {
+.install.snipet {
   width: 592px;
   height: 131px;
   border: 0;
@@ -203,10 +217,12 @@ body {
   margin: 0px;
   padding: 29px;
 }
+
 .nav-items.docs {
   width: 50%;
   padding: 0px;
 }
+
 .title.docs {
   padding: 0px;
 }
@@ -215,15 +231,40 @@ body {
   width: 130px;
   height: 30px;
 }
+
 /* browser css end */
 
+/* accordian css start */
+.accordian-doc {
+  height: 135.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 29px;
+}
+
+.accordion.two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* accordian css end */
 .footer-line.doc {
   display: none;
 }
+
 /* right doc css end */
 
 /* media queries for tab*/
 @media screen and (max-width: 998px) {
+  #code-snippet {
+    width: 500px;
+    height: 250px;
+  }
+
   /* aside */
   #hamburger-R {
     display: block;
@@ -249,7 +290,11 @@ body {
   }
 
   /* right-doc tab */
-
+  .doc {
+    padding: 10px 20px;
+    margin-top: 10px;
+    gap: 15px;
+  }
   .right-doc {
     width: 100%;
   }
@@ -258,18 +303,20 @@ body {
 
   .intro-doc {
     width: 100%;
-    height: 33rem;
-
-    border-radius: 8px 0px 0px 0px;
-
-    line-height: 25px;
+    height: 36rem;
+    line-height: 29px;
+    gap: 22px;
   }
 
-  .intro-doc h1 {
-    font-size: 2rem;
+  .intro-doc h1,
+  .install-doc h1,
+  .browser-doc h1,
+  .accordian-doc h1 {
+    font-size: 1.5rem;
   }
 
-  .intro-doc h2 {
+  .intro-doc h2 .browser-doc h2,
+  .accordian-doc h2 {
     font-size: 1.5rem;
   }
 
@@ -277,28 +324,39 @@ body {
     font-size: 1rem;
   }
 
-  .intro-doc p {
+  .intro-doc p,
+  .browser-doc p,
+  .accordian-doc p {
     font-size: 1rem;
   }
 
   .install-doc {
-    height: 55rem;
-  }
-  .browser-doc {
-    height: 58rem;
-    line-height: 21px;
-    display: flex;
+    height: 64rem;
+    line-height: 29px;
     gap: 22px;
+    background-color: #3a1b7b;
   }
+  .install-doc #code-snippet {
+    height: 145px;
+  }
+
+  .browser-doc {
+    height: 65rem;
+    line-height: 29px;
+  }
+
   .navbar.doc {
     width: 140%;
     margin: 0px;
     padding: 9px;
   }
-  .footer-line.doc {
-    display: flex;
+
+  /* accordian- */
+  .accordian-doc {
+    height: 103.6rem;
   }
 }
+
 /* tab ends */
 
 /* media queries for mobile*/
@@ -318,6 +376,7 @@ body {
     height: 100vh;
     padding: 20px;
   }
+
   .doc {
     padding: 0px 30px 0px 40px;
   }
@@ -328,6 +387,11 @@ body {
 
   /* right-doc mobile */
 
+  #code-snippet {
+    width: 300px;
+    height: 150px;
+  }
+
   .right-doc {
     width: 100%;
     height: 100vh;
@@ -336,7 +400,9 @@ body {
   /* intro doc css start*/
 
   .intro-doc,
-  .install-doc {
+  .install-doc,
+  .browser-doc,
+  .accordian-doc {
     width: 100%;
     gap: 12px;
     padding: 20px 20px 0px 20px;
@@ -349,13 +415,15 @@ body {
 
   .intro-doc h1,
   .install-doc h1,
-  .browser-doc h1 {
+  .browser-doc h1,
+  .accordian-doc h1 {
     font-size: 1.1rem;
   }
 
   .intro-doc h2,
-  .browser-doc h2 {
-    font-size: 1.2rem;
+  .browser-doc h2,
+  .accordian-doc h2 {
+    font-size: 1.1rem;
   }
 
   .intro-doc h4 {
@@ -369,30 +437,33 @@ body {
   .intro-doc p,
   .install-doc p,
   .browser-doc p,
-  .browser-doc li {
+  .browser-doc li,
+  .accordian-doc p {
     font-size: 0.7rem;
   }
 
-  .install-doc h3 {
+  .install-doc h3,
+  .browser-doc h3 {
     font-size: 0.8rem;
-  }
-
-  .install-snipet {
-    width: 292px;
-    height: 131px;
   }
 
   /* broser css */
   .browser-doc {
-    height: 58rem;
-    line-height: 21px;
-    display: flex;
+    height: 49rem;
+
     gap: 10px;
   }
+
   .navbar.doc {
     width: 295px;
     margin: 0px;
     padding: 9px;
+  }
+
+  /* accordion */
+
+  .accordian-doc {
+    height: 75.6rem;
   }
 
   .footer-line.doc {

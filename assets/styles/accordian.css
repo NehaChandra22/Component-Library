@@ -1,0 +1,134 @@
+ .accordion.two .wrapper{
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  .accordion.two .wrapper .parent-tab, .accordion.two
+  .wrapper .child-tab{
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+  }
+  .accordion.two .wrapper .parent-tab label, .accordion.two
+  .wrapper .child-tab label{
+    background: rgb(170, 167, 170);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s ease;
+  }
+ 
+  .accordion.two .parent-tab input:checked ~ label, .accordion.two 
+  .child-tab input:checked ~ label{
+    border-radius: 3px 3px 0 0;
+    background: rgb(147, 141, 147);
+  }
+  .accordion.two .wrapper label span{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-shadow: 0 -1px 1px purple; */
+  }
+  .accordion.two .wrapper .child-tab label span{
+    font-size: 17px;
+  }
+  .accordion.two .parent-tab label .icon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .accordion.two .wrapper .child-tab label .icon{
+    height: 27px;
+    width: 27px;
+  }
+  .accordion.two .parent-tab label .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .accordion.two .parent-tab input:checked ~ label .icon i:before,
+  .accordion.two .child-tab input:checked ~ label .icon i:before{
+    content: '\f068';
+  }
+  .accordion.two .wrapper .parent-tab .content,
+  .accordion.two .wrapper .child-tab .sub-content{
+    max-height: 0px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    transition: all 0.4s ease;
+  }
+  .accordion.two .parent-tab input:checked ~ .content,
+  .accordion.two .child-tab input:checked ~ .sub-content{
+    max-height: 100vh;
+  }
+  .accordion.two  .tab-3 input:checked ~ .content{
+    padding: 15px 20px;
+  }
+  .accordion.two .parent-tab .content p, .accordion.two
+  .child-tab .sub-content p{
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .accordion.two .child-tab .sub-content p{
+    font-size: 15px;
+  }
+  .accordion.two  input[type="radio"], .accordion.two
+  input[type="checkbox"]{
+    display: none;
+  }
+
+  /* accordion-2 */
+ 
+  .accordion.one button.accordion {
+    width: 100%;
+    background-color: rgb(123, 136, 229);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:#000000 solid 0.3px ;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    transition: rgb(123, 136, 229)  0.2s linear;
+  }
+  
+  .accordion.one  button.accordion:after {
+    
+    content: "\f150";
+    font-family: "fontawesome";
+    font-size: 18px;
+    float: right;
+  }
+  
+  .accordion.one button.accordion.is-open:after {
+    content: "\f151";
+  }
+  
+  .accordion.one  button.accordion:hover,
+  button.accordion.is-open {
+    background-color: #5b5fc9;
+  }
+  
+  .accordion.one .accordion-content {
+    background-color: rgb(203, 201, 239);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }

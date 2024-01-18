@@ -94,15 +94,16 @@
         <div class="menu menu-2">
           <h3><i class="box-icon fa-solid fa-cubes"></i> Components</h3>
           <ul class="menu-2-list">
-            <li>Accordian</li>
-            <li>Alert</li>
-            <li>Avatar</li>
-            <li>Badge</li>
-            <li>Breadcrumb</li>
-            <li>Button</li>
-            <li>Card</li>
-            <li>Dropdown</li>
-            <li>Modals</li>
+            <li><a href="#accordian"> Accordian </a></li>
+            <li><a href="#alert"> Alert </a></li>
+            <li><a href="#Avatar"> Avatar </a></li>
+            <li><a href="#accordian"> Badge</a></li>
+            <li><a href="#accordian"> Breadcrumb </a></li>
+            <li><a href="#accordian"> Button </a></li>
+            <li><a href="#accordian">Card </a></li>
+            <li><a href="#accordian"> Dropdown </a></li>
+            <li><a href="#accordian"> Modals</a></li>
+
             <li>Navbar</li>
             <li>Progress Bars</li>
             <li>Spinners</li>
@@ -174,6 +175,7 @@
           </div>
           <iframe
             class="install-snipet"
+            id="code-snippet"
             src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=591.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522href%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fstyles%252Fcui-use.css%2522%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252FJs%252Fscript.js%2522%253E%253C%252Fscript%253E"
             sandbox="allow-scripts allow-same-origin"
           >
@@ -231,7 +233,9 @@
               <li>Both Android Browsers & Desktop Browsers</li>
             </ul>
           </div>
-          <div class=""><h2>Responsiveness 📐</h2></div>
+          <div class="">
+            <h3>Responsiveness 📐</h3>
+          </div>
           <div class="">
             <p>
               A fantastic way to create responsive designs is by using a style
@@ -324,17 +328,219 @@
           </div>
         </div>
         <!-- Browser-doc ends -->
+
+        <!-- accordian-doc start -->
+        <div class="accordian-doc doc" id="accordian">
+          <div class="">
+            <h1>Accordion</h1>
+          </div>
+          <div class="">
+            <p>
+              Accordions are interactive UI elements that can expand or collapse
+              to reveal or hide content. They are particularly useful for
+              presenting Q&A sections, FAQs, or any content that benefits from a
+              structured and collapsible format.
+            </p>
+          </div>
+          <div class="">
+            <h2>Vertical Accordion📜</h2>
+          </div>
+          <div class="">
+            <p>
+              Create a user experience with CUI's collapsing accordions. Perfect
+              for showcasing dynamic content in a sleek and innovative way.
+            </p>
+          </div>
+          <div class="">
+            <p>
+              Click the accordions below to expand/collapse the accordion
+              content.
+            </p>
+          </div>
+          <div class="">
+            <h2>Sample-1</h2>
+          </div>
+          <div class="">
+            <p>
+              You can effortlessly incorporate the below accordion into your
+              project by simply adding the CSS CDN link.
+            </p>
+          </div>
+          <div class="accordion two">
+            <div class="wrapper">
+              <!-- Accordion Heading One -->
+              <div class="parent-tab">
+                <input type="radio" name="tab" id="tab-1" checked />
+                <label for="tab-1">
+                  <span>Accordion Heading One</span>
+                  <div class="icon"><i class="fas fa-plus"></i></div>
+                </label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
+                    Quam, repellendus facere, id porro magnam blanditiiss
+                    quoteos dolores ratione quidem ipsam esse quos pariatur,
+                    repellat obcaecati!
+                  </p>
+                </div>
+              </div>
+              <!-- Accordion Heading Two -->
+              <div class="parent-tab">
+                <input type="radio" name="tab" id="tab-2" />
+                <label for="tab-2">
+                  <span>Accordion Heading Two</span>
+                  <div class="icon"><i class="fas fa-plus"></i></div>
+                </label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
+                    Quam, repellendus facere, id porro magnam blanditiiss
+                    quoteos dolores ratione quidem ipsam esse quos pariatur,
+                    repellat obcaecati!
+                  </p>
+                </div>
+              </div>
+              <!-- Accordion Heading Three -->
+              <div class="parent-tab tab-3">
+                <input type="radio" name="tab" id="tab-3" />
+                <label for="tab-3" class="tab-3">
+                  <span>Accordion Heading Three</span>
+                  <div class="icon"><i class="fas fa-plus"></i></div>
+                </label>
+                <div class="content">
+                  <!-- Sub Heading One -->
+                  <div class="child-tab">
+                    <input type="checkbox" name="sub-tab" id="tab-4" />
+                    <label for="tab-4">
+                      <span>Sub Heading One</span>
+                      <div class="icon"><i class="fas fa-plus"></i></div>
+                    </label>
+                    <div class="sub-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        thelit dolor. Utfacilis labore, exercitationem fuga
+                        minima a illo modi vitaerse dignissimos? Vero?
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Sub Heading Two -->
+                  <div class="child-tab">
+                    <input type="checkbox" name="sub-tab" id="tab-5" />
+                    <label for="tab-5">
+                      <span>Sub Heading Two</span>
+                      <div class="icon"><i class="fas fa-plus"></i></div>
+                    </label>
+                    <div class="sub-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        thelit dolor. Utfacilis labore, exercitationem fuga
+                        minima a illo modi vitaerse dignissimos? Vero?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Heading Four -->
+              <div class="parent-tab">
+                <input type="radio" name="tab" id="tab-6" />
+                <label for="tab-6">
+                  <span>Accordion Heading Four</span>
+                  <div class="icon"><i class="fas fa-plus"></i></div>
+                </label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
+                    Quam, repellendus facere, id porro magnam blanditiiss
+                    quoteos dolores ratione quidem ipsam esse quos pariatur,
+                    repellat obcaecati!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <iframe
+              id="code-snippet"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522accordion%2520two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520One%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-1%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520One%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520thelit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quam%252C%2520repellendus%2520facere%252C%2520id%2520porro%2520magnam%2520blanditiiss%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quoteos%2520dolores%2520ratione%2520quidem%2520ipsam%2520esse%2520quos%2520pariatur%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520repellat%2520obcaecati%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520Two%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-2%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520Two%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520thelit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quam%252C%2520repellendus%2520facere%252C%2520id%2520porro%2520magnam%2520blanditiiss%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quoteos%2520dolores%2520ratione%2520quidem%2520ipsam%2520esse%2520quos%2520pariatur%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520repellat%2520obcaecati%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520Three%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2520tab-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-3%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-3%2522%2520class%253D%2522tab-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520Three%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Sub%2520Heading%2520One%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522child-tab%2522"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="">
+            <h2>Sample-2</h2>
+          </div>
+          <div class="">
+            <p>
+              To utilize the accordion below, ensure you include both the CSS
+              and JavaScript plugins by adding their respective CDN links.
+            </p>
+          </div>
+          <div class="accordion one">
+            <button class="accordion">Website Design and Development</button>
+            <div class="accordion-content">
+              <p>
+                Whether you need a wordpress website, a shopify site, or a
+                custom fullstack application, we got you! No matter what kind of
+                website or application you need, it will be made with clean and
+                maintable code that follows modern development standards. We
+                also have top notch designers that can make unique designs that
+                will make your website look different and unique. Not to mention
+                that we also provide 24/7 website maintenance so that you get
+                all the support you need.
+              </p>
+            </div>
+
+            <button class="accordion">Website Analytics and Performance</button>
+            <div class="accordion-content">
+              <p>
+                We believe that in order to have a successful website, you need
+                to constantly adjust and adapt to the data provided by your
+                website visitors. Here at Pierre Web Development, we have
+                narrowed down the specific key performance indicators that will
+                dramatically boost your success with connecting to target
+                markets. We will provide a basic metric dashboard based on how
+                much traffic your site gets, detailed analytical reports that
+                show which parts of your website is the most popular among
+                visitors as well as access to tools you can use to make
+                meaningful decisions based on this data.
+              </p>
+            </div>
+
+            <button class="accordion">Digital Marketing</button>
+            <div class="accordion-content">
+              <p>
+                We know that every great website focuses on helping you get more
+                business and building a brand that your ideal customers will
+                love and support. We can help you set up a great, SEO-focused
+                content strategy, a paid ads campaign, email marketing
+                integration with Mailchimp as well as a social media marketing
+                campaign. We also use popular website analytic tools to track
+                your site's performance and provide you with weekly analytic
+                reports to help bolster your growth.
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <iframe
+              id="code-snippet"
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522accordion%2520one%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522accordion%2522%253EWebsite%2520Design%2520and%2520Development%253C%252Fbutton%253E%250A%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520Whether%2520you%2520need%2520a%2520wordpress%2520website%252C%2520a%2520shopify%2520site%252C%2520or%2520a%2520custom%2520fullstack%2520application%252C%2520we%2520got%2520you%21%2520No%2520matter%2520what%2520kind%2520of%2520website%2520or%2520application%2520you%2520need%252C%2520it%2520will%2520be%2520made%2520with%2520clean%2520and%2520maintable%2520code%2520that%2520follows%2520modern%2520development%2520standards.%2520We%2520also%2520have%2520top%2520notch%2520designers%2520that%2520can%2520make%2520unique%2520designs%2520that%2520will%2520make%2520your%2520website%2520look%2520different%2520and%2520unique.%2520Not%2520to%2520mention%2520that%2520we%2520also%2520provide%252024%252F7%2520website%2520maintenance%2520so%2520that%2520you%2520get%2520all%2520the%2520support%2520you%2520need.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cbutton%2520class%253D%2522accordion%2522%253EWebsite%2520Analytics%2520and%2520Performance%253C%252Fbutton%253E%250A%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520We%2520believe%2520that%2520in%2520order%2520to%2520have%2520a%2520successful%2520website%252C%2520you%2520need%2520to%2520constantly%2520adjust%2520and%2520adapt%2520to%2520the%2520data%2520provided%2520by%2520your%2520website%2520visitors.%2520Here%2520at%2520Pierre%2520Web%2520Development%252C%2520we%2520have%2520narrowed%2520down%2520the%2520specific%2520key%2520performance%2520indicators%2520that%2520will%2520dramatically%2520boost%2520your%2520success%2520with%2520connecting%2520to%2520target%2520markets.%2520We%2520will%2520provide%2520a%2520basic%2520metric%2520dashboard%2520based%2520on%2520how%2520much%2520traffic%2520your%2520site%2520gets%252C%2520detailed%2520analytical%2520reports%2520that%2520show%2520which%2520parts%2520of%2520your%2520website%2520is%2520the%2520most%2520popular%2520among%2520visitors%2520as%2520well%2520as%2520access%2520to%2520tools%2520you%2520can%2520use%2520to%2520make%2520meaningful%2520decisions%2520based%2520on%2520this%2520data.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cbutton%2520class%253D%2522accordion%2522%253EDigital%2520Marketing%253C%252Fbutton%253E%250A%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%253Cp%253E%250A%2520%2520%2520%2520We%2520know%2520that%2520every%2520great%2520website%2520focuses%2520on%2520helping%2520you%2520get%2520more%2520business%2520and%2520building%2520a%2520brand%2520that%2520your%2520ideal%2520customers%2520will%2520love%2520and%2520support.%2520We%2520can%2520help%2520you%2520set%2520up%2520a%2520great%252C%2520SEO-focused%2520content%2520strategy%252C%2520a%2520paid%2520ads%2520campaign%252C%2520email%2520marketing%2520integration%2520with%2520Mailchimp%2520as%2520well%2520as%2520a%2520social%2520media%2520marketing%2520campaign.%2520We%2520also%2520use%2520popular%2520website%2520analytic%2520tools%2520to%2520track%2520your%2520site%27s%2520performance%2520and%2520provide%2520you%2520with%2520weekly%2520analytic%2520reports%2520to%2520help%2520bolster%2520your%2520growth.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+        <!--accordidan-doc ends -->
       </section>
     </div>
     <!-- footer start -->
-
+    <!-- 
     <div class="footer-line doc">
       <div class=""></div>
       <p>© 2024 Copyright: CUI-COMPONENTS_LIBRARY</p>
       <div class="up" onclick=" topFunction() ">
         <i class="fa-solid fa-arrow-up"></i>
       </div>
-    </div>
+    </div> -->
 
     <!-- footer end -->
     <script src="./assets/Js/script.js"></script>
