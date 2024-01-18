@@ -245,13 +245,30 @@ body {
   line-height: 29px;
 }
 
-.accordion.two {
+.accordion.two,
+.Alert {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 /* accordian css end */
+
+/* alert css start */
+.alert-doc {
+  height: 135.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 24px;
+  background-color: red;
+}
+
+/* alert css end */
+
 .footer-line.doc {
   display: none;
 }
@@ -333,7 +350,7 @@ body {
   .install-doc {
     height: 64rem;
     line-height: 29px;
-    gap: 22px;    
+    gap: 22px;
   }
   .install-doc #code-snippet {
     height: 145px;

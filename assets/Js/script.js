@@ -87,6 +87,7 @@ accordionBtns.forEach((accordion) => {
   };
 });
 // accordion js end
+// alert//
 document.querySelectorAll(".alert-doc .close").forEach(function (closeButton) {
   closeButton.addEventListener("click", function () {
     var alertContainer = this.closest(".alert");
