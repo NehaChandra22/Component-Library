@@ -5,6 +5,7 @@
 @import url(./badge.css);
 @import url(./button.css);
 @import url(./card.css);
+@import url(./progress.css);
 body {
   background-image: none;
   background-color: var(--white-color);
@@ -353,6 +354,28 @@ body {
   display: flex;
   justify-content: center;
 }
+/* progress start */
+.progress-doc {
+  height: 125.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 27px;
+}
+#code-snippet-prog {
+  width: 375px;
+  height: 280px;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+.prog-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .footer-line.doc {
   display: none;
 }
@@ -483,7 +506,8 @@ body {
   #code-snippet,
   #code-snippet-badge-1,
   #code-snippet-badge-2,
-  #code-snippet-btn {
+  #code-snippet-btn,
+  #code-snippet-prog {
     width: 300px;
     height: 150px;
   }
@@ -568,6 +592,10 @@ body {
   /* button */
   .btn-doc {
     height: 113.5rem;
+  }
+  /* card */
+  .card-doc {
+    height: 73rem;
   }
   .footer-line.doc {
     display: flex;

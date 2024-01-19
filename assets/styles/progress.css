@@ -1,0 +1,40 @@
+.s-progress {
+    width: 600px;
+    height: 25px;
+    border-radius: 12px;
+    margin: 20px 10px;
+    border: 0px ;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(209, 204, 204);
+     box-shadow: rgba(57, 56, 56, 0.35) 0px -50px 36px -28px inset;;
+  }
+  
+  .s-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: rgb(255, 251, 251);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    font-size:0.8rem;
+  }
+  
+  .progress-info span {
+    width: 25%;
+    background-color: blue;
+  }
+  .progress-success span {
+    width: 70%;
+    background-color: green;
+  }
+  .progress-warning span {
+    background-color: rgb(249, 228, 4);
+    width: 90%;
+  }
+  .progress-danger span {
+    background-color: red;
+    width: 50%;
+  }

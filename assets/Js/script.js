@@ -96,3 +96,5 @@ document.querySelectorAll(".alert-doc .close").forEach(function (closeButton) {
   });
 });
 // alert ends
+
+ 
