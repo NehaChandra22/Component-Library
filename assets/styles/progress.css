@@ -1,40 +1,109 @@
 .s-progress {
-    width: 600px;
-    height: 25px;
-    border-radius: 12px;
-    margin: 20px 10px;
-    border: 0px ;
-    overflow: hidden;
+  width: 600px;
+  height: 25px;
+  border-radius: 12px;
+  margin: 20px 10px;
+  border: 0px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(209, 204, 204);
+  box-shadow: rgba(57, 56, 56, 0.35) 0px -50px 36px -28px inset;
+}
+
+.s-progress span {
+  height: 100%;
+  display: block;
+  width: 0;
+  color: rgb(255, 251, 251);
+  line-height: 30px;
+  position: absolute;
+  text-align: end;
+  padding-right: 5px;
+  font-size: 0.8rem;
+}
+
+.progress-info span {
+  width: 25%;
+  background-color: blue;
+}
+.progress-success span {
+  width: 70%;
+  background-color: green;
+}
+.progress-warning span {
+  background-color: rgb(249, 228, 4);
+  width: 90%;
+}
+.progress-danger span {
+  background-color: red;
+  width: 50%;
+}
+/* progress-2 */
+.progress-container-2 {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #000;
+}
+
+.progress-container-2 .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #ffcdb2;
+  overflow: hidden;
+}
+.progress-container-2 .circle.per-25 {
+  background-image: conic-gradient(#b5838d 25%, #ffcdb2 0);
+}
+.progress-container-2 .circle.per-50 {
+  background-image: conic-gradient(#b5838d 50%, #ffcdb2 0);
+}
+.progress-container-2 .circle.per-75 {
+  background-image: conic-gradient(#b5838d 75%, #ffcdb2 0);
+}
+.progress-container-2 .circle.per-100 {
+  background-image: conic-gradient(#b5838d 100%, #ffcdb2 0);
+}
+.progress-container-2 .circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #000;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 468px) {
+  .progress-container-2 .circle {
     position: relative;
-    background-color: rgb(209, 204, 204);
-     box-shadow: rgba(57, 56, 56, 0.35) 0px -50px 36px -28px inset;;
+    width: 70px;
+    height: 100px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background: #ffcdb2;
+    overflow: hidden;
   }
-  
-  .s-progress span {
-    height: 100%;
-    display: block;
-    width: 0;
-    color: rgb(255, 251, 251);
-    line-height: 30px;
-    position: absolute;
-    text-align: end;
-    padding-right: 5px;
-    font-size:0.8rem;
+  .progress-container-2 .circle {
+    width: 70px;
+    height: 70px;
   }
-  
-  .progress-info span {
-    width: 25%;
-    background-color: blue;
+  .progress-container-2 .circle .inner {
+    width: 75px;
+    height: 75px;
+    font-size: 1.25em;
   }
-  .progress-success span {
-    width: 70%;
-    background-color: green;
-  }
-  .progress-warning span {
-    background-color: rgb(249, 228, 4);
-    width: 90%;
-  }
-  .progress-danger span {
-    background-color: red;
-    width: 50%;
-  }
+}

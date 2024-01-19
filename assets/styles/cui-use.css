@@ -356,7 +356,7 @@ body {
 }
 /* progress start */
 .progress-doc {
-  height: 125.5rem;
+  height: 90.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -365,17 +365,19 @@ body {
   line-height: 27px;
 }
 #code-snippet-prog {
-  width: 375px;
+  width: 775px;
   height: 280px;
   border: 0;
   transform: scale(1);
   overflow: hidden;
 }
-.prog-container{
+.prog-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 .footer-line.doc {
   display: none;
 }
@@ -596,6 +598,20 @@ body {
   /* card */
   .card-doc {
     height: 73rem;
+  }
+  /* progress */
+  .progress-doc {
+    height: 72rem;
+  }
+  .s-progress {
+    width: 257px;
+    height: 25px;
+
+    margin: 9px 0px;
+  }
+  .progress-container-2 .circle {
+    width: 100px;
+    height: 100px;
   }
   .footer-line.doc {
     display: flex;
