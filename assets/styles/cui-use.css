@@ -286,19 +286,25 @@ body {
 }
 /* badge css start */
 .badge-doc {
-  height: 77.5rem;
+  height: 88.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
   line-height: 27px;
-  /* background-color: rgb(40, 83, 69); */
 }
 .badge {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+#code-snippet-badge-1,
+#code-snippet-badge-2 {
+  width: 692px;
+  height: 187px;
+  border: 0;
+  overflow: auto;
 }
 .footer-line.doc {
   display: none;
@@ -440,7 +446,9 @@ body {
 
   /* right-doc mobile */
 
-  #code-snippet {
+  #code-snippet,
+  #code-snippet-badge-1,
+  #code-snippet-badge-2 {
     width: 300px;
     height: 150px;
   }
