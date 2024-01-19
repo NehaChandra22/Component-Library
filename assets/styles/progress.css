@@ -46,7 +46,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
-  background: #000;
+  background:white;
 }
 
 .progress-container-2 .circle {
@@ -80,22 +80,18 @@
   transform: translate(-50%, -50%);
   width: 115px;
   height: 115px;
-  background: #000;
+  background: white;
   border-radius: 50%;
   font-size: 1.85em;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.75);
+  color: black;
 }
 
 @media screen and (max-width: 468px) {
   .progress-container-2 .circle {
-    position: relative;
+     
     width: 70px;
     height: 100px;
-    margin: 0.5rem;
-    border-radius: 50%;
-    background: #ffcdb2;
-    overflow: hidden;
   }
   .progress-container-2 .circle {
     width: 70px;
