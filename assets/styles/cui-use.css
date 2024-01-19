@@ -279,7 +279,6 @@ body {
   flex-direction: column;
   gap: 15px;
   line-height: 27px;
-  
 }
 
 .avatar-doc .avtar-frame {
@@ -295,6 +294,11 @@ body {
   gap: 25px;
   line-height: 27px;
   /* background-color: rgb(40, 83, 69); */
+}
+.badge {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .footer-line.doc {
   display: none;
@@ -447,9 +451,8 @@ body {
   }
 
   /* intro doc css start*/
-  
 
- .doc{
+  .doc {
     width: 100%;
     gap: 12px;
     line-height: 21px;
@@ -476,11 +479,12 @@ body {
     height: 49rem;
   }
 
-  .doc li , .doc p {
+  .doc li,
+  .doc p {
     font-size: 0.7rem;
   }
 
- .doc h3{
+  .doc h3 {
     font-size: 0.8rem;
   }
 
@@ -507,10 +511,10 @@ body {
   .alert-doc {
     line-height: 20px;
   }
-/* avatar */
-.avatar-doc {
-  line-height: 20px;
-}
+  /* avatar */
+  .avatar-doc {
+    line-height: 20px;
+  }
   .footer-line.doc {
     display: flex;
     position: relative;

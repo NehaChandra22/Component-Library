@@ -81,7 +81,55 @@
 }
 
 .badge {
-    width: 200px;
-    height: 15%;
-   margin: 0% auto;  
+     width: 100%;
+     display: flex;
+     justify-content: center;    
   }
+
+  /* sample-2 */
+
+  .red-badge {
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid  white;
+    top: 75%;
+    right: 8px;
+    width: 30px;
+    background-color:  red;
+    z-index: 20;
+    position: absolute;
+}
+
+.green-badge {
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid  white;
+    top: 75%;
+    right: 8px;
+    width: 25px;
+    background-color:  green;
+    z-index: 20;
+    position: absolute;
+}
+.orange-badge {
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid  white;
+    top: 75%;
+    right: 8px;
+    width: 20px;
+    background-color:  orange;
+    z-index: 20;
+    position: absolute;
+}
+.blue-badge {
+    height: 15px;
+    border-radius: 100%;
+    border: 3px solid  white;
+    top: 75%;
+    right: 8px;
+    width: 15px;
+    background-color:  blue;
+    z-index: 20;
+    position: absolute;
+}
