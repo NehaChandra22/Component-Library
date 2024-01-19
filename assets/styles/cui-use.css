@@ -308,27 +308,26 @@ body {
 }
 /* button doc css start */
 .btn-doc {
-  height: 108.5rem;
+  height: 133.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
   line-height: 27px;
-  background-color: #3a1b7b;
-}
+  }
 .btn-container {
   width: 100%;
   /* background-color: aqua; */
   display: flex;
   justify-content: space-around;
-  padding: 30px 10px;
+  padding: 30px 10px ;
   border-radius: 10px;
   border: 2px solid #3a1b7b;
   flex-wrap: wrap;
 }
-.btn-container.shimmer {
-  background-color: #3a1b7b;
+.btn-container.shimmer{
+  background-color: #420a60;
 }
 #code-snippet-btn {
   width: 877px;
@@ -336,6 +335,7 @@ body {
   border: 0;
   transform: scale(1);
   overflow: hidden;
+   
 }
 .footer-line.doc {
   display: none;
@@ -479,8 +479,7 @@ body {
 
   #code-snippet,
   #code-snippet-badge-1,
-  #code-snippet-badge-2,
-  #code-snippet-btn {
+  #code-snippet-badge-2,#code-snippet-btn  {
     width: 300px;
     height: 150px;
   }
