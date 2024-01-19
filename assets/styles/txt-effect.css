@@ -8,7 +8,7 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
       0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -25,7 +25,7 @@
 }
 .txt-grad {
   background: -webkit-linear-gradient(#eee, #2e8dc0);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .txt-flip {
