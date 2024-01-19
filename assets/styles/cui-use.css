@@ -345,7 +345,7 @@ body {
 
 /* media queries for tab*/
 @media screen and (max-width: 998px) {
-  #code-snippet {
+  #code-snippet , #code-snippet-btn  {
     width: 520px;
     height: 280px;
   }
@@ -446,8 +446,7 @@ body {
   }
 
   .alert-doc {
-    background-color: #3a1b7b;
-    height: 76rem;
+      height: 76rem;
   }
 }
 
