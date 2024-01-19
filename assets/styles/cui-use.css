@@ -362,13 +362,14 @@ border-radius: 10px;
 }
 /* progress start */
 .progress-doc {
-  height: 90.5rem;
+  height: 89.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
   line-height: 27px;
+
 }
 #code-snippet-prog {
   width: 775px;
@@ -383,13 +384,14 @@ border-radius: 10px;
 }
 /* text-utility */
 .text-utility-doc{
-  height: 90.5rem;
+  height: 45.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
   line-height: 27px;
+ 
 }
 .txt-container {
   width: 100%;
@@ -398,8 +400,9 @@ border-radius: 10px;
   justify-content: center;
   align-items: center;
   border: 5px solid #3a1b7b;
-padding: 5px;
+padding: 10px 0px ;
 border-radius: 10px;
+gap:20px;
 }
 .footer-line.doc {
   display: none;

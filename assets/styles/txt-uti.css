@@ -1,0 +1,16 @@
+.heading{
+    font-size: 5rem;
+}
+ .small-text {
+    font-size: 2rem;
+ }
+ .uppercase-text {
+    text-transform: uppercase;
+ }
+ .text-capitalize {
+    text-transform: capitalize;
+ }
+ .grey-text {
+color: grey;
+ }
+ 
