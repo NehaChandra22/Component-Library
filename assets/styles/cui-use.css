@@ -4,6 +4,7 @@
 @import url(./avatar.css);
 @import url(./badge.css);
 @import url(./button.css);
+@import url(./card.css);
 body {
   background-image: none;
   background-color: var(--white-color);
@@ -337,6 +338,21 @@ body {
   overflow: hidden;
    
 }
+/* card-doc */
+.card-doc {
+  height: 133.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 27px; 
+  }
+  .card-container-1 ,.card-container-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 .footer-line.doc {
   display: none;
 }
