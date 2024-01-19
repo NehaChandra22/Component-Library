@@ -315,19 +315,19 @@ body {
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
-  line-height: 27px; 
-  }
+  line-height: 27px;
+}
 .btn-container {
   width: 100%;
   /* background-color: aqua; */
   display: flex;
   justify-content: space-around;
-  padding: 30px 10px ;
+  padding: 30px 10px;
   border-radius: 10px;
   border: 2px solid #3a1b7b;
   flex-wrap: wrap;
 }
-.btn-container.shimmer{
+.btn-container.shimmer {
   background-color: #420a60;
 }
 #code-snippet-btn {
@@ -336,23 +336,23 @@ body {
   border: 0;
   transform: scale(1);
   overflow: hidden;
-   
 }
 /* card-doc */
 .card-doc {
-  height: 133.5rem;
+  height: 125.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
-  line-height: 27px; 
-  }
-  .card-container-1 ,.card-container-2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+  line-height: 27px;
+}
+.card-container-1,
+.card-container-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .footer-line.doc {
   display: none;
 }
@@ -361,7 +361,8 @@ body {
 
 /* media queries for tab*/
 @media screen and (max-width: 998px) {
-  #code-snippet , #code-snippet-btn  {
+  #code-snippet,
+  #code-snippet-btn {
     width: 520px;
     height: 280px;
   }
@@ -410,18 +411,17 @@ body {
     gap: 22px;
   }
 
-   .doc h1{
+  .doc h1 {
     font-size: 1.5rem;
   }
 
- .doc h2 {
+  .doc h2 {
     font-size: 1.3rem;
   }
 
   .doc h4 {
     font-size: 1rem;
   }
- 
 
   .install-doc {
     height: 64rem;
@@ -450,7 +450,7 @@ body {
   }
 
   .alert-doc {
-      height: 76rem;
+    height: 76rem;
   }
 }
 
@@ -482,7 +482,8 @@ body {
 
   #code-snippet,
   #code-snippet-badge-1,
-  #code-snippet-badge-2,#code-snippet-btn  {
+  #code-snippet-badge-2,
+  #code-snippet-btn {
     width: 300px;
     height: 150px;
   }
@@ -548,7 +549,7 @@ body {
   .accordian-doc {
     height: 88.6rem;
   }
- 
+
   /* alert */
   .alert-doc {
     height: 53rem;
@@ -561,13 +562,13 @@ body {
     line-height: 20px;
   }
   /* badge */
-  .badge-doc{
-    height:56rem;
+  .badge-doc {
+    height: 56rem;
   }
   /* button */
   .btn-doc {
-    height: 113.5rem;     
-    }
+    height: 113.5rem;
+  }
   .footer-line.doc {
     display: flex;
     position: relative;
