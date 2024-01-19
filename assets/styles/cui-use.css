@@ -2,6 +2,7 @@
 @import url(./accordian.css);
 @import url(./alert.css);
 @import url(./avatar.css);
+@import url(./badge.css);
 
 body {
   background-image: none;
@@ -278,12 +279,23 @@ body {
   flex-direction: column;
   gap: 15px;
   line-height: 27px;
+  
 }
 
 .avatar-doc .avtar-frame {
   margin-top: 3rem;
 }
-
+/* badge css start */
+.badge-doc {
+  height: 77.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 27px;
+  /* background-color: rgb(40, 83, 69); */
+}
 .footer-line.doc {
   display: none;
 }
