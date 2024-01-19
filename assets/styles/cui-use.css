@@ -400,13 +400,13 @@ border-radius: 10px;
   justify-content: center;
   align-items: center;
   border: 5px solid #3a1b7b;
-padding: 13px 0px ;
+padding: 10px 0px ;
 border-radius: 10px;
 gap:20px;
 }
 /* text effect */
 .txt-effect-doc{
-  height: 45.5rem;
+  height: 49.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
