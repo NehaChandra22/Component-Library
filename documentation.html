@@ -1,1109 +1,1011 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/Images/favvv.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/styles/cui-use.css" />
-    <title>Catalyst UI</title>
-  </head>
 
-  <body>
-    <!-- navbar start -->
-    <nav class="navbar docs">
-      <div class="hamburger-icon" id="hamburger-R" onclick="showAside()">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="hamburger-icon" id="cross-icon-R" onclick="hideAside()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <div class="title">
-        <h1>CatalystUI</h1>
-      </div>
-      <div class="nav-items">
-        <div class="items">
-          <a href="./index.html">Home</a>
-        </div>
-        <div class="item-active">
-          <a href="./documentation.html">Documentation</a>
-        </div>
-        <div class="git"><i class="fa-brands fa-square-github"></i></div>
-        <div class="dark-mode">
-          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
-        </div>
-        <div class="light-mode">
-          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
-        </div>
-      </div>
-      <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="hamburger-icon" id="cross-icon-L" onclick="hideSidebar()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-    </nav>
-    <!-- navbar-ends -->
-    <!-- media-query-navbar-start -->
-    <div class="left-sidebar">
-      <div class="nav-items">
-        <div class="items">
-          <a href="#about-us">Home</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/Images/favvv.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/styles/cui-use.css" />
+  <title>Catalyst UI</title>
+</head>
 
-        <div class="items">
-          <a href="#items">Documentation</a>
-        </div>
-        <div class="git"><i class="fa-brands fa-square-github"></i></div>
-        <div class="dark-mode">
-          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
-        </div>
-        <div class="light-mode">
-          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
-        </div>
+<body>
+  <!-- navbar start -->
+  <nav class="navbar docs">
+    <div class="hamburger-icon" id="hamburger-R" onclick="showAside()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="hamburger-icon" id="cross-icon-R" onclick="hideAside()">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="title">
+      <h1>CatalystUI</h1>
+    </div>
+    <div class="nav-items">
+      <div class="items">
+        <a href="./index.html">Home</a>
+      </div>
+      <div class="item-active">
+        <a href="./documentation.html">Documentation</a>
+      </div>
+      <div class="git"><i class="fa-brands fa-square-github"></i></div>
+      <div class="dark-mode">
+        <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+      </div>
+      <div class="light-mode">
+        <i onclick="lightmode()" class="fa-solid fa-moon"></i>
       </div>
     </div>
-    <!-- media-query-navbar-ends -->
+    <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="hamburger-icon" id="cross-icon-L" onclick="hideSidebar()">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </nav>
+  <!-- navbar-ends -->
+  <!-- media-query-navbar-start -->
+  <div class="left-sidebar">
+    <div class="nav-items">
+      <div class="items">
+        <a href="#about-us">Home</a>
+      </div>
 
-    <div class="main-doc">
-      <!-- left container start -->
-      <aside class="left-doc">
-        <div class="menu menu-1">
-          <h3><i class="fa-solid fa-book-open"></i> Getting Started</h3>
-          <ul class="menu-1-list">
-            <li><a href="#intro"> Introduction</a></li>
-            <li><a href="#install"> Installation</a></li>
-            <li>
-              <a href="#browser">
-                Browsers <br />
-                & Devices
-              </a>
-            </li>
+      <div class="items">
+        <a href="#items">Documentation</a>
+      </div>
+      <div class="git"><i class="fa-brands fa-square-github"></i></div>
+      <div class="dark-mode">
+        <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+      </div>
+      <div class="light-mode">
+        <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+  </div>
+  <!-- media-query-navbar-ends -->
+
+  <div class="main-doc">
+    <!-- left container start -->
+    <aside class="left-doc">
+      <div class="menu menu-1">
+        <h3><i class="fa-solid fa-book-open"></i> Getting Started</h3>
+        <ul class="menu-1-list">
+          <li><a href="#intro"> Introduction</a></li>
+          <li><a href="#install"> Installation</a></li>
+          <li>
+            <a href="#browser">
+              Browsers <br />
+              & Devices
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu-2">
+        <h3><i class="box-icon fa-solid fa-cubes"></i> Components</h3>
+        <ul class="menu-2-list">
+          <li><a href="#accordian"> Accordian </a></li>
+          <li><a href="#alert"> Alert </a></li>
+          <li><a href="#avatar"> Avatar </a></li>
+          <li><a href="#badge"> Badge</a></li>
+          <li><a href="#btn"> Button </a></li>
+          <li><a href="#card"> Card </a></li>
+          <li><a href="#prog">Progress </a></li>
+          <li><a href="#text-u"> Text Utilities </a></li>
+          <li><a href="#txt-effect"> Text Effects</a></li>
+
+          <li>Navbar</li>
+          <li>Progress Bars</li>
+          <li>Spinners</li>
+        </ul>
+      </div>
+    </aside>
+    <section class="right-doc">
+      <!-- intro-doc start -->
+      <div class="intro-doc doc" id="intro">
+        <div class="">
+          <h1>Getting started with Catalyst UI 🚀</h1>
+        </div>
+        <div class="feature">
+          <h2>Features at a Glance</h2>
+          <p>Universal Compatibility 🧩</p>
+          <p>Effortless CDN Integration 🚛</p>
+          <p>Customization with CSS 🎨</p>
+          <p>Elegant Dark Theme 🌛</p>
+        </div>
+        <div class="best-prac">
+          <h2>Best Practices</h2>
+          <h4>Accessibility First ♿️</h4>
+          <p>
+            Catalyst UI is built with accessibility as a top priority,
+            ensuring that your applications are user-friendly for everyone.
+          </p>
+        </div>
+        <div class="comm">
+          <h2>Join the Community</h2>
+          <h4>Open Source Collaboration 😸</h4>
+          <p>
+            Contribute to the
+            <a href="https://github.com/NehaChandra22/Component-Library">
+              Catalyst UI
+            </a>
+            , explore open-source possibilities, and be part of shaping the
+            future of web development.
+          </p>
+        </div>
+        <div class="">
+          <p>
+            Dive into the detailed documentation to unlock the full potential
+            of CUI for your projects. Happy coding! 🚀
+          </p>
+        </div>
+      </div>
+      <!-- intro-doc end -->
+
+      <!-- install-doc start -->
+      <div class="install-doc doc" id="install">
+        <div class="install-head">
+          <h1>How to install ?</h1>
+        </div>
+        <div class="">
+          <p>
+            To unlock the full potential of Catalyst UI and seamlessly
+            integrate its features into your project, follow these simple
+            steps:
+          </p>
+        </div>
+
+        <div class="">
+          <h3>1. Add CDN Links 🌐</h3>
+          <p>
+            In your HTML file, include the following CDN links. Place the CSS
+            link in the head tag for styling and the JavaScript link at the
+            end of the body tag for optimal performance.
+          </p>
+        </div>
+        <iframe class="install-snipet" id="code-snippet"
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=591.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522href%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fstyles%252Fcui-use.css%2522%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252FJs%252Fscript.js%2522%253E%253C%252Fscript%253E"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="">
+          <h3>2. Explore CatalystUI Components 🔍</h3>
+          <p>
+            Once the CDN links are added, dive into the CatalystUI components.
+            Search for the UI elements you need, such as navbar, button, card,
+            etc.
+          </p>
+        </div>
+        <div class="">
+          <h3>3. Copy HTML Code 📋</h3>
+          <p>
+            For each UI component, find the associated HTML code provided in
+            the documentation. Copy the code snippet.
+          </p>
+        </div>
+        <div class="">
+          <h3>4. Paste in Your HTML 🎨</h3>
+          <p>
+            Paste the copied HTML code in your project's HTML file where you
+            want to incorporate the specific UI component. Customize as needed
+            to fit your design.
+          </p>
+        </div>
+        <div class="">
+          <p>
+            With these simple steps, you'll have Catalyst UI seamlessly
+            integrated into your project, empowering you to create stunning
+            and functional user interfaces.Code triumph! 🌟
+          </p>
+        </div>
+      </div>
+      <!-- install-doc end -->
+
+      <!-- Browser-doc start -->
+      <div class="browser-doc doc" id="browser">
+        <div class="">
+          <h1>Browsers and Devices 🌐📱</h1>
+        </div>
+        <div class="">
+          <p>CatalystUI: Supported in all browsers and devices.</p>
+        </div>
+        <div class="">
+          <p>Supported Browsers</p>
+          <ul>
+            <li>Chrome 🌐</li>
+            <li>Firefox 🦊</li>
+            <li>Safari 🍏</li>
+            <li>Microsoft Edge 🌐</li>
+            <li>Opera 🎭</li>
+            <li>Brave 🦁</li>
+            <li>Both Android Browsers & Desktop Browsers</li>
           </ul>
         </div>
-        <div class="menu menu-2">
-          <h3><i class="box-icon fa-solid fa-cubes"></i> Components</h3>
-          <ul class="menu-2-list">
-            <li><a href="#accordian"> Accordian </a></li>
-            <li><a href="#alert"> Alert </a></li>
-            <li><a href="#avatar"> Avatar </a></li>
-            <li><a href="#badge"> Badge</a></li>
-            <li><a href="#btn"> Button </a></li>
-            <li><a href="#card"> Card </a></li>
-            <li><a href="#prog">Progress </a></li>
-            <li><a href="#text-u"> Text Utilities </a></li>
-            <li><a href="#accordian"> Modals</a></li>
+        <div class="">
+          <h3>Responsiveness 📐</h3>
+        </div>
+        <div class="">
+          <p>
+            A fantastic way to create responsive designs is by using a style
+            sheet like cui-use.css. CatalystUI simplifies the development of
+            sites that look great on any device!
+          </p>
+        </div>
+        <div class="">
+          <p>
+            All UI components from CatalystUI are fully responsive, adapting
+            seamlessly to various screen sizes.
+          </p>
+          <p>Example: Navbar in Desktop and Mobile 🖥️📱</p>
+        </div>
 
-            <li>Navbar</li>
-            <li>Progress Bars</li>
-            <li>Spinners</li>
+        <div class="">
+          <p>
+            Let's explore an example of a Navbar that gracefully transitions
+            between desktop and mobile. 🚀
+          </p>
+        </div>
+        <div class="nav-docs">
+          <!-- navbar start -->
+          <nav class="navbar doc">
+            <div class="hamburger-icon" id="hamburger-R" onclick="showAside()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hamburger-icon" id="cross-icon-R" onclick="hideAside()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="title docs">
+              <h1>CatalystUI</h1>
+            </div>
+            <div class="nav-items docs">
+              <div class="items">
+                <a href="./index.html">Home</a>
+              </div>
+              <div class="item-active">
+                <a href="./documentation.html">Documentation</a>
+              </div>
+              <div class="git">
+                <i class="fa-brands fa-square-github"></i>
+              </div>
+              <div class="dark-mode">
+                <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+              </div>
+              <div class="light-mode">
+                <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+              </div>
+            </div>
+            <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hamburger-icon" id="cross-icon-L" onclick="hideSidebar()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </nav>
+          <!-- navbar-ends -->
+          <p>Mobile View --</p>
+          <img src="./assets/Images/mobile.jpg" alt="" />
+        </div>
+
+        <div class="">
+          <h2>Devices</h2>
+          <p>
+            We have divided all the devices into three categories based on
+            their screen width.
+          </p>
+          <ul>
+            <li>Mobile Devices ( width < 468px )</li>
+            <li>Mobile Devices ( width < 998px )</li>
+            <li>Desktop Devices ( width > 998px )</li>
           </ul>
         </div>
-      </aside>
-      <section class="right-doc">
-        <!-- intro-doc start -->
-        <div class="intro-doc doc" id="intro">
-          <div class="">
-            <h1>Getting started with Catalyst UI 🚀</h1>
-          </div>
-          <div class="feature">
-            <h2>Features at a Glance</h2>
-            <p>Universal Compatibility 🧩</p>
-            <p>Effortless CDN Integration 🚛</p>
-            <p>Customization with CSS 🎨</p>
-            <p>Elegant Dark Theme 🌛</p>
-          </div>
-          <div class="best-prac">
-            <h2>Best Practices</h2>
-            <h4>Accessibility First ♿️</h4>
-            <p>
-              Catalyst UI is built with accessibility as a top priority,
-              ensuring that your applications are user-friendly for everyone.
-            </p>
-          </div>
-          <div class="comm">
-            <h2>Join the Community</h2>
-            <h4>Open Source Collaboration 😸</h4>
-            <p>
-              Contribute to the
-              <a href="https://github.com/NehaChandra22/Component-Library">
-                Catalyst UI
-              </a>
-              , explore open-source possibilities, and be part of shaping the
-              future of web development.
-            </p>
-          </div>
-          <div class="">
-            <p>
-              Dive into the detailed documentation to unlock the full potential
-              of CUI for your projects. Happy coding! 🚀
-            </p>
+      </div>
+      <!-- Browser-doc ends -->
+
+      <!-- accordian-doc start -->
+      <div class="accordian-doc doc" id="accordian">
+        <div class="">
+          <h1>Accordion 🪗</h1>
+        </div>
+        <div class="">
+          <p>
+            Accordions are interactive UI elements that can expand or collapse
+            to reveal or hide content. They are particularly useful for
+            presenting Q&A sections, FAQs, or any content that benefits from a
+            structured and collapsible format.
+          </p>
+        </div>
+        <div class="">
+          <h2>Vertical Accordion📜</h2>
+        </div>
+        <div class="">
+          <p>
+            Create a user experience with CUI's collapsing accordions. Perfect
+            for showcasing dynamic content in a sleek and innovative way.
+          </p>
+        </div>
+        <div class="">
+          <p>
+            Click the accordions below to expand/collapse the accordion
+            content.
+          </p>
+        </div>
+        <div class="">
+          <h2>Sample-1</h2>
+        </div>
+        <div class="">
+          <p>
+            You can effortlessly incorporate the below accordion into your
+            project by simply adding the CSS CDN link.
+          </p>
+        </div>
+        <div class="accordion two">
+          <div class="wrapper">
+            <!-- Accordion Heading One -->
+            <div class="parent-tab">
+              <input type="radio" name="tab" id="tab-1" checked />
+              <label for="tab-1">
+                <span>Accordion Heading One</span>
+                <div class="icon"><i class="fas fa-plus"></i></div>
+              </label>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
+                  Quam, repellendus facere, id porro magnam blanditiiss
+                  quoteos dolores ratione quidem ipsam esse quos pariatur,
+                  repellat obcaecati!
+                </p>
+              </div>
+            </div>
+            <!-- Accordion Heading Two -->
+            <div class="parent-tab">
+              <input type="radio" name="tab" id="tab-2" />
+              <label for="tab-2">
+                <span>Accordion Heading Two</span>
+                <div class="icon"><i class="fas fa-plus"></i></div>
+              </label>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
+                  Quam, repellendus facere, id porro magnam blanditiiss
+                  quoteos dolores ratione quidem ipsam esse quos pariatur,
+                  repellat obcaecati!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- intro-doc end -->
-
-        <!-- install-doc start -->
-        <div class="install-doc doc" id="install">
-          <div class="install-head">
-            <h1>How to install ?</h1>
-          </div>
-          <div class="">
-            <p>
-              To unlock the full potential of Catalyst UI and seamlessly
-              integrate its features into your project, follow these simple
-              steps:
-            </p>
-          </div>
-
-          <div class="">
-            <h3>1. Add CDN Links 🌐</h3>
-            <p>
-              In your HTML file, include the following CDN links. Place the CSS
-              link in the head tag for styling and the JavaScript link at the
-              end of the body tag for optimal performance.
-            </p>
-          </div>
-          <iframe
-            class="install-snipet"
-            id="code-snippet"
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=591.5&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522href%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fstyles%252Fcui-use.css%2522%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252FJs%252Fscript.js%2522%253E%253C%252Fscript%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
+        <div class="">
+          <iframe id="code-snippet"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522accordion%2520two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520One%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-1%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520One%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520thelit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quam%252C%2520repellendus%2520facere%252C%2520id%2520porro%2520magnam%2520blanditiiss%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quoteos%2520dolores%2520ratione%2520quidem%2520ipsam%2520esse%2520quos%2520pariatur%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520repellat%2520obcaecati%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520Two%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-2%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520Two%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520thelit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quam%252C%2520repellendus%2520facere%252C%2520id%2520porro%2520magnam%2520blanditiiss%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quoteos%2520dolores%2520ratione%2520quidem%2520ipsam%2520esse%2520quos%2520pariatur%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520repellat%2520obcaecati%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
           </iframe>
-          <div class="">
-            <h3>2. Explore CatalystUI Components 🔍</h3>
+        </div>
+        <div class="">
+          <h2>Sample-2</h2>
+        </div>
+        <div class="">
+          <p>
+            To utilize the accordion below, ensure you include both the CSS
+            and JavaScript plugins by adding their respective CDN links.
+          </p>
+        </div>
+        <div class="accordion one">
+          <button class="accordion">Website Design and Development</button>
+          <div class="accordion-content">
             <p>
-              Once the CDN links are added, dive into the CatalystUI components.
-              Search for the UI elements you need, such as navbar, button, card,
-              etc.
+              Whether you need a wordpress website, a shopify site, or a
+              custom fullstack application, we got you! A shopify site, or a
+              custom fullstack application, we got you!
             </p>
           </div>
-          <div class="">
-            <h3>3. Copy HTML Code 📋</h3>
+          <button class="accordion">Website Analytics and Performance</button>
+          <div class="accordion-content">
             <p>
-              For each UI component, find the associated HTML code provided in
-              the documentation. Copy the code snippet.
-            </p>
-          </div>
-          <div class="">
-            <h3>4. Paste in Your HTML 🎨</h3>
-            <p>
-              Paste the copied HTML code in your project's HTML file where you
-              want to incorporate the specific UI component. Customize as needed
-              to fit your design.
-            </p>
-          </div>
-          <div class="">
-            <p>
-              With these simple steps, you'll have Catalyst UI seamlessly
-              integrated into your project, empowering you to create stunning
-              and functional user interfaces.Code triumph! 🌟
+              We believe that in order to have a successful website, you need
+              to constantly adjust and adapt to the data provided by your
+              website visitors.
             </p>
           </div>
         </div>
-        <!-- install-doc end -->
-
-        <!-- Browser-doc start -->
-        <div class="browser-doc doc" id="browser">
-          <div class="">
-            <h1>Browsers and Devices 🌐📱</h1>
-          </div>
-          <div class="">
-            <p>CatalystUI: Supported in all browsers and devices.</p>
-          </div>
-          <div class="">
-            <p>Supported Browsers</p>
-            <ul>
-              <li>Chrome 🌐</li>
-              <li>Firefox 🦊</li>
-              <li>Safari 🍏</li>
-              <li>Microsoft Edge 🌐</li>
-              <li>Opera 🎭</li>
-              <li>Brave 🦁</li>
-              <li>Both Android Browsers & Desktop Browsers</li>
-            </ul>
-          </div>
-          <div class="">
-            <h3>Responsiveness 📐</h3>
-          </div>
-          <div class="">
-            <p>
-              A fantastic way to create responsive designs is by using a style
-              sheet like cui-use.css. CatalystUI simplifies the development of
-              sites that look great on any device!
-            </p>
-          </div>
-          <div class="">
-            <p>
-              All UI components from CatalystUI are fully responsive, adapting
-              seamlessly to various screen sizes.
-            </p>
-            <p>Example: Navbar in Desktop and Mobile 🖥️📱</p>
-          </div>
-
-          <div class="">
-            <p>
-              Let's explore an example of a Navbar that gracefully transitions
-              between desktop and mobile. 🚀
-            </p>
-          </div>
-          <div class="nav-docs">
-            <!-- navbar start -->
-            <nav class="navbar doc">
-              <div
-                class="hamburger-icon"
-                id="hamburger-R"
-                onclick="showAside()"
-              >
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <div
-                class="hamburger-icon"
-                id="cross-icon-R"
-                onclick="hideAside()"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <div class="title docs">
-                <h1>CatalystUI</h1>
-              </div>
-              <div class="nav-items docs">
-                <div class="items">
-                  <a href="./index.html">Home</a>
-                </div>
-                <div class="item-active">
-                  <a href="./documentation.html">Documentation</a>
-                </div>
-                <div class="git">
-                  <i class="fa-brands fa-square-github"></i>
-                </div>
-                <div class="dark-mode">
-                  <i onclick="darkmode()" class="fa-solid fa-moon"></i>
-                </div>
-                <div class="light-mode">
-                  <i onclick="lightmode()" class="fa-solid fa-moon"></i>
-                </div>
-              </div>
-              <div
-                class="hamburger-icon"
-                id="hamburger-L"
-                onclick="showSidebar()"
-              >
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <div
-                class="hamburger-icon"
-                id="cross-icon-L"
-                onclick="hideSidebar()"
-              >
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-            </nav>
-            <!-- navbar-ends -->
-            <p>Mobile View --</p>
-            <img src="./assets/Images/mobile.jpg" alt="" />
-          </div>
-
-          <div class="">
-            <h2>Devices</h2>
-            <p>
-              We have divided all the devices into three categories based on
-              their screen width.
-            </p>
-            <ul>
-              <li>Mobile Devices ( width < 468px )</li>
-              <li>Mobile Devices ( width < 998px )</li>
-              <li>Desktop Devices ( width > 998px )</li>
-            </ul>
-          </div>
+        <div class="">
+          <iframe id="code-snippet"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522accordion%2520one%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522accordion%2522%253EWebsite%2520Design%2520and%2520Development%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Whether%2520you%2520need%2520a%2520wordpress%2520website%252C%2520a%2520shopify%2520site%252C%2520or%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520custom%2520fullstack%2520application%252C%2520we%2520got%2520you%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520shopify%2520site%252C%2520or%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520custom%2520fullstack%2520application%252C%2520we%2520got%2520you%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522accordion%2522%253EWebsite%2520Analytics%2520and%2520Performance%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520We%2520believe%2520that%2520in%2520order%2520to%2520have%2520a%2520successful%2520website%252C%2520you%2520need%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520to%2520constantly%2520adjust%2520and%2520adapt%2520to%2520the%2520data%2520provided%2520by%2520your%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520website%2520visitors.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
         </div>
-        <!-- Browser-doc ends -->
+      </div>
+      <!--accordidan-doc ends -->
 
-        <!-- accordian-doc start -->
-        <div class="accordian-doc doc" id="accordian">
-          <div class="">
-            <h1>Accordion 🪗</h1>
-          </div>
-          <div class="">
-            <p>
-              Accordions are interactive UI elements that can expand or collapse
-              to reveal or hide content. They are particularly useful for
-              presenting Q&A sections, FAQs, or any content that benefits from a
-              structured and collapsible format.
-            </p>
-          </div>
-          <div class="">
-            <h2>Vertical Accordion📜</h2>
-          </div>
-          <div class="">
-            <p>
-              Create a user experience with CUI's collapsing accordions. Perfect
-              for showcasing dynamic content in a sleek and innovative way.
-            </p>
-          </div>
-          <div class="">
-            <p>
-              Click the accordions below to expand/collapse the accordion
-              content.
-            </p>
-          </div>
-          <div class="">
-            <h2>Sample-1</h2>
-          </div>
-          <div class="">
-            <p>
-              You can effortlessly incorporate the below accordion into your
-              project by simply adding the CSS CDN link.
-            </p>
-          </div>
-          <div class="accordion two">
-            <div class="wrapper">
-              <!-- Accordion Heading One -->
-              <div class="parent-tab">
-                <input type="radio" name="tab" id="tab-1" checked />
-                <label for="tab-1">
-                  <span>Accordion Heading One</span>
-                  <div class="icon"><i class="fas fa-plus"></i></div>
-                </label>
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
-                    Quam, repellendus facere, id porro magnam blanditiiss
-                    quoteos dolores ratione quidem ipsam esse quos pariatur,
-                    repellat obcaecati!
-                  </p>
-                </div>
-              </div>
-              <!-- Accordion Heading Two -->
-              <div class="parent-tab">
-                <input type="radio" name="tab" id="tab-2" />
-                <label for="tab-2">
-                  <span>Accordion Heading Two</span>
-                  <div class="icon"><i class="fas fa-plus"></i></div>
-                </label>
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing thelit.
-                    Quam, repellendus facere, id porro magnam blanditiiss
-                    quoteos dolores ratione quidem ipsam esse quos pariatur,
-                    repellat obcaecati!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522accordion%2520two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520One%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-1%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520One%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520thelit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quam%252C%2520repellendus%2520facere%252C%2520id%2520porro%2520magnam%2520blanditiiss%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quoteos%2520dolores%2520ratione%2520quidem%2520ipsam%2520esse%2520quos%2520pariatur%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520repellat%2520obcaecati%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Accordion%2520Heading%2520Two%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522parent-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522tab%2522%2520id%253D%2522tab-2%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522tab-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAccordion%2520Heading%2520Two%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520thelit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quam%252C%2520repellendus%2520facere%252C%2520id%2520porro%2520magnam%2520blanditiiss%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quoteos%2520dolores%2520ratione%2520quidem%2520ipsam%2520esse%2520quos%2520pariatur%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520repellat%2520obcaecati%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-          <div class="">
-            <h2>Sample-2</h2>
-          </div>
-          <div class="">
-            <p>
-              To utilize the accordion below, ensure you include both the CSS
-              and JavaScript plugins by adding their respective CDN links.
-            </p>
-          </div>
-          <div class="accordion one">
-            <button class="accordion">Website Design and Development</button>
-            <div class="accordion-content">
-              <p>
-                Whether you need a wordpress website, a shopify site, or a
-                custom fullstack application, we got you! A shopify site, or a
-                custom fullstack application, we got you!
-              </p>
-            </div>
-            <button class="accordion">Website Analytics and Performance</button>
-            <div class="accordion-content">
-              <p>
-                We believe that in order to have a successful website, you need
-                to constantly adjust and adapt to the data provided by your
-                website visitors.
-              </p>
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522accordion%2520one%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522accordion%2522%253EWebsite%2520Design%2520and%2520Development%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Whether%2520you%2520need%2520a%2520wordpress%2520website%252C%2520a%2520shopify%2520site%252C%2520or%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520custom%2520fullstack%2520application%252C%2520we%2520got%2520you%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520shopify%2520site%252C%2520or%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520custom%2520fullstack%2520application%252C%2520we%2520got%2520you%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522accordion%2522%253EWebsite%2520Analytics%2520and%2520Performance%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520We%2520believe%2520that%2520in%2520order%2520to%2520have%2520a%2520successful%2520website%252C%2520you%2520need%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520to%2520constantly%2520adjust%2520and%2520adapt%2520to%2520the%2520data%2520provided%2520by%2520your%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520website%2520visitors.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
+      <!-- alert doc start  -->
+      <div class="alert-doc doc" id="alert">
+        <div class="">
+          <h1>Alert 🚨</h1>
         </div>
-        <!--accordidan-doc ends -->
-
-        <!-- alert doc start  -->
-        <div class="alert-doc doc" id="alert">
-          <div class="">
-            <h1>Alert 🚨</h1>
-          </div>
-          <div class="">
-            <p>
-              The Alert component is a versatile and user-friendly feature
-              designed to notify users about critical information, warnings,
-              successes, or errors in your web applications. Whether you want to
-              communicate important messages or enhance user experience, the
-              Alert component offers an intuitive solution.
-            </p>
-          </div>
-          <div class="">
-            <h3>Alerts are classified into 4 main categories:</h3>
-          </div>
-          <div class="">
-            <ul>
-              <li>Success (Green) 🟢</li>
-              <li>Information (Blue) 🔵</li>
-              <li>Warning (Yellow/Orange) 🟠</li>
-              <li>Danger/Error (Red) 🔴</li>
-            </ul>
-          </div>
-          <div class="">
-            <p>Dismiss (and destroy) Alert with the built-in close button.</p>
-          </div>
-          <div class="Alert">
-            <div class="success alert">
-              <div class="content">
-                <div class="icon">
-                  <svg
-                    width="50"
-                    height="50"
-                    id="Layer_1"
-                    style="enable-background: new 0 0 128 128"
-                    version="1.1"
-                    viewBox="0 0 128 128"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <g>
-                      <circle fill="#fff" cx="64" cy="64" r="64" />
-                    </g>
-                    <g>
-                      <path
-                        fill="#3EBD61"
-                        d="M54.3,97.2L24.8,67.7c-0.4-0.4-0.4-1,0-1.4l8.5-8.5c0.4-0.4,1-0.4,1.4,0L55,78.1l38.2-38.2   c0.4-0.4,1-0.4,1.4,0l8.5,8.5c0.4,0.4,0.4,1,0,1.4L55.7,97.2C55.3,97.6,54.7,97.6,54.3,97.2z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <p>A Success Message</p>
-              </div>
-              <button class="close">
-                <svg
-                  height="18px"
-                  id="Layer_1"
-                  style="enable-background: new 0 0 512 512"
-                  version="1.1"
-                  viewBox="0 0 512 512"
-                  width="18px"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <path
-                    fill="#69727D"
-                    d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
-                  />
+        <div class="">
+          <p>
+            The Alert component is a versatile and user-friendly feature
+            designed to notify users about critical information, warnings,
+            successes, or errors in your web applications. Whether you want to
+            communicate important messages or enhance user experience, the
+            Alert component offers an intuitive solution.
+          </p>
+        </div>
+        <div class="">
+          <h3>Alerts are classified into 4 main categories:</h3>
+        </div>
+        <div class="">
+          <ul>
+            <li>Success (Green) 🟢</li>
+            <li>Information (Blue) 🔵</li>
+            <li>Warning (Yellow/Orange) 🟠</li>
+            <li>Danger/Error (Red) 🔴</li>
+          </ul>
+        </div>
+        <div class="">
+          <p>Dismiss (and destroy) Alert with the built-in close button.</p>
+        </div>
+        <div class="Alert">
+          <div class="success alert">
+            <div class="content">
+              <div class="icon">
+                <svg width="50" height="50" id="Layer_1" style="enable-background: new 0 0 128 128" version="1.1"
+                  viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g>
+                    <circle fill="#fff" cx="64" cy="64" r="64" />
+                  </g>
+                  <g>
+                    <path fill="#3EBD61"
+                      d="M54.3,97.2L24.8,67.7c-0.4-0.4-0.4-1,0-1.4l8.5-8.5c0.4-0.4,1-0.4,1.4,0L55,78.1l38.2-38.2   c0.4-0.4,1-0.4,1.4,0l8.5,8.5c0.4,0.4,0.4,1,0,1.4L55.7,97.2C55.3,97.6,54.7,97.6,54.3,97.2z" />
+                  </g>
                 </svg>
-              </button>
-            </div>
-
-            <div class="info alert">
-              <div class="content">
-                <div class="icon">
-                  <svg
-                    width="50"
-                    height="50"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="50" height="50" rx="25" fill="white" />
-                    <path d="M27 22H23V40H27V22Z" fill="#006CE3" />
-                    <path
-                      d="M25 18C24.2089 18 23.4355 17.7654 22.7777 17.3259C22.1199 16.8864 21.6072 16.2616 21.3045 15.5307C21.0017 14.7998 20.9225 13.9956 21.0769 13.2196C21.2312 12.4437 21.6122 11.731 22.1716 11.1716C22.731 10.6122 23.4437 10.2312 24.2196 10.0769C24.9956 9.92252 25.7998 10.0017 26.5307 10.3045C27.2616 10.6072 27.8864 11.1199 28.3259 11.7777C28.7654 12.4355 29 13.2089 29 14C29 15.0609 28.5786 16.0783 27.8284 16.8284C27.0783 17.5786 26.0609 18 25 18V18Z"
-                      fill="#006CE3"
-                    />
-                  </svg>
-                </div>
-                <p>An Info Message</p>
               </div>
-              <button class="close">
-                <svg
-                  height="18px"
-                  id="Layer_1"
-                  style="enable-background: new 0 0 512 512"
-                  version="1.1"
-                  viewBox="0 0 512 512"
-                  width="18px"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
+              <p>A Success Message</p>
+            </div>
+            <button class="close">
+              <svg height="18px" id="Layer_1" style="enable-background: new 0 0 512 512" version="1.1"
+                viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#69727D"
+                  d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="info alert">
+            <div class="content">
+              <div class="icon">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="50" height="50" rx="25" fill="white" />
+                  <path d="M27 22H23V40H27V22Z" fill="#006CE3" />
                   <path
-                    fill="#69727D"
-                    d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
-                  />
+                    d="M25 18C24.2089 18 23.4355 17.7654 22.7777 17.3259C22.1199 16.8864 21.6072 16.2616 21.3045 15.5307C21.0017 14.7998 20.9225 13.9956 21.0769 13.2196C21.2312 12.4437 21.6122 11.731 22.1716 11.1716C22.731 10.6122 23.4437 10.2312 24.2196 10.0769C24.9956 9.92252 25.7998 10.0017 26.5307 10.3045C27.2616 10.6072 27.8864 11.1199 28.3259 11.7777C28.7654 12.4355 29 13.2089 29 14C29 15.0609 28.5786 16.0783 27.8284 16.8284C27.0783 17.5786 26.0609 18 25 18V18Z"
+                    fill="#006CE3" />
                 </svg>
-              </button>
-            </div>
-
-            <div class="warning alert">
-              <div class="content">
-                <div class="icon">
-                  <svg
-                    height="50"
-                    viewBox="0 0 512 512"
-                    width="50"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="#fff"
-                      d="M449.07,399.08,278.64,82.58c-12.08-22.44-44.26-22.44-56.35,0L51.87,399.08A32,32,0,0,0,80,446.25H420.89A32,32,0,0,0,449.07,399.08Zm-198.6-1.83a20,20,0,1,1,20-20A20,20,0,0,1,250.47,397.25ZM272.19,196.1l-5.74,122a16,16,0,0,1-32,0l-5.74-121.95v0a21.73,21.73,0,0,1,21.5-22.69h.21a21.74,21.74,0,0,1,21.73,22.7Z"
-                    />
-                  </svg>
-                </div>
-                <p>A Warning Message</p>
               </div>
-              <button class="close">
-                <svg
-                  height="18px"
-                  id="Layer_1"
-                  style="enable-background: new 0 0 512 512"
-                  version="1.1"
-                  viewBox="0 0 512 512"
-                  width="18px"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <path
-                    fill="#69727D"
-                    d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
-                  />
+              <p>An Info Message</p>
+            </div>
+            <button class="close">
+              <svg height="18px" id="Layer_1" style="enable-background: new 0 0 512 512" version="1.1"
+                viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#69727D"
+                  d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="warning alert">
+            <div class="content">
+              <div class="icon">
+                <svg height="50" viewBox="0 0 512 512" width="50" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff"
+                    d="M449.07,399.08,278.64,82.58c-12.08-22.44-44.26-22.44-56.35,0L51.87,399.08A32,32,0,0,0,80,446.25H420.89A32,32,0,0,0,449.07,399.08Zm-198.6-1.83a20,20,0,1,1,20-20A20,20,0,0,1,250.47,397.25ZM272.19,196.1l-5.74,122a16,16,0,0,1-32,0l-5.74-121.95v0a21.73,21.73,0,0,1,21.5-22.69h.21a21.74,21.74,0,0,1,21.73,22.7Z" />
                 </svg>
-              </button>
-            </div>
-
-            <div class="danger alert">
-              <div class="content">
-                <div class="icon">
-                  <svg
-                    height="50"
-                    viewBox="0 0 512 512"
-                    width="50"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="#fff"
-                      d="M449.07,399.08,278.64,82.58c-12.08-22.44-44.26-22.44-56.35,0L51.87,399.08A32,32,0,0,0,80,446.25H420.89A32,32,0,0,0,449.07,399.08Zm-198.6-1.83a20,20,0,1,1,20-20A20,20,0,0,1,250.47,397.25ZM272.19,196.1l-5.74,122a16,16,0,0,1-32,0l-5.74-121.95v0a21.73,21.73,0,0,1,21.5-22.69h.21a21.74,21.74,0,0,1,21.73,22.7Z"
-                    />
-                  </svg>
-                </div>
-                <p>A Danger Message</p>
               </div>
-              <button class="close">
-                <svg
-                  height="18px"
-                  id="Layer_1"
-                  style="enable-background: new 0 0 512 512"
-                  version="1.1"
-                  viewBox="0 0 512 512"
-                  width="18px"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <path
-                    fill="#69727D"
-                    d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"
-                  />
+              <p>A Warning Message</p>
+            </div>
+            <button class="close">
+              <svg height="18px" id="Layer_1" style="enable-background: new 0 0 512 512" version="1.1"
+                viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#69727D"
+                  d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="danger alert">
+            <div class="content">
+              <div class="icon">
+                <svg height="50" viewBox="0 0 512 512" width="50" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff"
+                    d="M449.07,399.08,278.64,82.58c-12.08-22.44-44.26-22.44-56.35,0L51.87,399.08A32,32,0,0,0,80,446.25H420.89A32,32,0,0,0,449.07,399.08Zm-198.6-1.83a20,20,0,1,1,20-20A20,20,0,0,1,250.47,397.25ZM272.19,196.1l-5.74,122a16,16,0,0,1-32,0l-5.74-121.95v0a21.73,21.73,0,0,1,21.5-22.69h.21a21.74,21.74,0,0,1,21.73,22.7Z" />
                 </svg>
-              </button>
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=826&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522Alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522success%2520alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522Layer_1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520style%253D%2522enable-background%253A%2520new%25200%25200%2520128%2520128%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520version%253D%25221.1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%2520128%2520128%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xml%253Aspace%253D%2522preserve%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253Axlink%253D%2522http%253A%252F%252Fwww.w3.org%252F1999%252Fxlink%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cg%253E%253Ccircle%2520fill%253D%2522%2523fff%2522%2520cx%253D%252264%2522%2520cy%253D%252264%2522%2520r%253D%252264%2522%2520%252F%253E%253C%252Fg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522%25233EBD61%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520d%253D%2522M54.3%252C97.2L24.8%252C67.7c-0.4-0.4-0.4-1%252C0-1.4l8.5-8.5c0.4-0.4%252C1-0.4%252C1.4%252C0L55%252C78.1l38.2-38.2%2520%2520%2520c0.4-0.4%252C1-0.4%252C1.4%252C0l8.5%252C8.5c0.4%252C0.4%252C0.4%252C1%252C0%252C1.4L55.7%252C97.2C55.3%252C97.6%252C54.7%252C97.6%252C54.3%252C97.2z%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EA%2520Success%2520Message%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252218px%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522Layer_1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520style%253D%2522enable-background%253A%2520new%25200%25200%2520512%2520512%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520version%253D%25221.1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%2520512%2520512%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252218px%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xml%253Aspace%253D%2522preserve%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253Axlink%253D%2522http%253A%252F%252Fwww.w3.org%252F1999%252Fxlink%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522%252369727D%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520d%253D%2522M437.5%252C386.6L306.9%252C256l130.6-130.6c14.1-14.1%252C14.1-36.8%252C0-50.9c-14.1-14.1-36.8-14.1-50.9%252C0L256%252C205.1L125.4%252C74.5%2520%2520c-14.1-14.1-36.8-14.1-50.9%252C0c-14.1%252C14.1-14.1%252C36.8%252C0%252C50.9L205.1%252C256L74.5%252C386.6c-14.1%252C14.1-14.1%252C36.8%252C0%252C50.9%2520%2520c14.1%252C14.1%252C36.8%252C14.1%252C50.9%252C0L256%252C306.9l130.6%252C130.6c14.1%252C14.1%252C36.8%252C14.1%252C50.9%252C0C451.5%252C423.4%252C451.5%252C400.6%252C437.5%252C386.6z%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-        </div>
-        <!-- alert doc ends -->
-
-        <!-- avatar doc start  -->
-        <div class="avatar-doc doc" id="avatar">
-          <div class="">
-            <h1>Avatar 👤</h1>
-          </div>
-          <div class="">
-            <p>
-              The Catalyst UI Avatar component is a powerful tool for displaying
-              user profile pictures in an elegant and customizable way. Whether
-              it's showcasing profile information on a dedicated page or gracing
-              the navigation bar, Avatars add a personal touch to your web
-              applications.
-            </p>
-          </div>
-          <div class="">
-            <h2>Sample Avatar</h2>
-          </div>
-          <div class="">
-            <p>Here's a quick guide:</p>
-          </div>
-          <div class="">
-            <p>
-              Class: 'avatar-container' . Include this class to create an Avatar
-              container.
-            </p>
-          </div>
-
-          <div class="">
-            <h3>Sizes:</h3>
-            <ul>
-              <li>Large: avatar-large 🌟</li>
-              <li>Big: avatar-big 🚀</li>
-              <li>Medium: avatar-medium 🌈</li>
-              <li>Small: avatar-small 🔍</li>
-            </ul>
-          </div>
-          <div class="">
-            <p>
-              You need to include class avatar-container and for size add class
-              according to size.(e.g. class="avatar-container avatar-large")
-            </p>
-          </div>
-          <div class="avatar-cont">
-            <div class="avatar-container avatar-large">
-              <img src="./assets/Images/avtar-1.jpg" alt="" />
-            </div>
-            <div class="avatar-container avatar-big">
-              <img src="./assets/Images/avtar-2.jpg" alt="" />
-            </div>
-            <div class="avatar-container avatar-medium">
-              <img src="./assets/Images/avtar-3.jpg" alt="" />
-            </div>
-            <div class="avatar-container avatar-small">
-              <img src="./assets/Images/avtar-4.jpg" alt="" />
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet"
-              class="avtar-frame"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=826&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522avatar-cont%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-1.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-big%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-2.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-3.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-4.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-        </div>
-        <!-- avatar doc ends  -->
-
-        <!-- badge doc start -->
-        <div class="badge-doc doc" id="badge">
-          <div class="">
-            <h1>Badge 🛡️</h1>
-          </div>
-          <div class="">
-            <p>
-              The Badge Icon component is a versatile element that allows you to
-              add visually appealing badges to highlight important
-              information,statuses or notifications.
-            </p>
-          </div>
-          <div class="">
-            <h2>Sample-1 (Pulse Badge)</h2>
-          </div>
-          <div class="">
-            <p>Use class : 'pulse' to apply Badge Pulse.</p>
-          </div>
-          <div class="badge">
-            <div class="container">
-              <div class="pulse"></div>
-              <i class="far fa-bell"></i>
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-badge-1"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=615&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pulse%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-          <div class="">
-            <h2>Sample-2 (Color Badge)</h2>
-          </div>
-          <div class="">
-            <p>
-              Four type of badges are available which can be used with Avatar.
-              Use class names red-badge, green-badge, orange-badge, blue-badge
-              for different badges.
-            </p>
-          </div>
-          <div class="avatar-cont">
-            <div class="avatar-container avatar-large">
-              <img src="./assets/Images/avtar-1.jpg" alt="" />
-              <span class="red-badge"></span>
-            </div>
-            <div class="avatar-container avatar-big">
-              <img src="./assets/Images/avtar-2.jpg" alt="" />
-              <span class="green-badge"></span>
-            </div>
-            <div class="avatar-container avatar-medium">
-              <img src="./assets/Images/avtar-3.jpg" alt="" />
-              <span class="orange-badge"></span>
-            </div>
-            <div class="avatar-container avatar-small">
-              <img src="./assets/Images/avtar-4.jpg" alt="" />
-              <span class="blue-badge"></span>
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-badge-2"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=615&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522avatar-cont%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522red-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-big%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-2.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522green-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-3.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522orange-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-4.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522blue-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-        </div>
-        <!-- badge doc ends -->
-
-        <!-- button doc start -->
-        <div class="btn-doc doc" id="btn">
-          <div class="">
-            <h1>Button</h1>
-          </div>
-          <div class="">
-            <h2>Variants</h2>
-          </div>
-          <div class="">
-            <p>
-              Catalyst UI includes a variety of button variants, each designed
-              to serve a specific semantic purpose and offer enhanced control
-              over your application's user interface. Use class:'btn' to create
-              button . To create variant buttons use classes given below.
-            </p>
-          </div>
-          <div class="">
-            <h3>Button Variants:</h3>
-            <ul>
-              <li>.btn-primary</li>
-              <li>.btn-secondary</li>
-              <li>.btn-success</li>
-              <li>.btn-warning</li>
-              <li>.btn-danger</li>
-              <li>.btn-info</li>
-            </ul>
-          </div>
-          <div class="btn-container">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-btn"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-          <div class="">
-            <h2>Outline Buttons</h2>
-          </div>
-          <div class="">
-            To create an outline button, simply replace the default modifier
-            classes with the .btn-outline-* classes. These classes remove all
-            background images and colors, giving your buttons a clean and
-            minimalistic appearance.
-          </div>
-          <div class="">
-            <h3>Outline Button Variants:</h3>
-            <ul>
-              <li>.btn-outline-primary</li>
-              <li>.btn-outline-secondary</li>
-              <li>.btn-outline-success</li>
-              <li>.btn-outline-warning</li>
-              <li>.btn-outline-danger</li>
-              <li>.btn-outline-info</li>
-            </ul>
-          </div>
-          <div class="btn-container">
-            <button type="button" class="btn btn-outline-primary">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Secondary
-            </button>
-            <button type="button" class="btn btn-outline-success">
-              Success
-            </button>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-            <button type="button" class="btn btn-outline-warning">
-              Warning
-            </button>
-            <button type="button" class="btn btn-outline-info">Info</button>
-            <button type="button" class="btn btn-outline-light">Light</button>
-            <button type="button" class="btn btn-outline-dark">Dark</button>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-btn"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-dark%2522%253EDark%253C%252Fbutton%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-          <div class="">
-            <h2>Shimmer button</h2>
-          </div>
-          <div class="">To use Shimmer button put class : 'btn-shimmer'</div>
-          <div class="btn-container shimmer">
-            <button class="btn-shimmer">Click me</button>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-btn"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-shimmer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Click%2520me%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-        </div>
-        <!-- button doc ends -->
-
-        <!-- card start -->
-        <div class="card-doc doc" id="card">
-          <div class="">
-            <h1>Card 📇</h1>
-          </div>
-          <div class="">
-            <p>
-              The Catalyst UI Card component is a versatile and visually
-              appealing element designed to organize and showcase information
-              within your web applications. Create engaging user interfaces by
-              leveraging the power of Catalyst UI's Card component.
-            </p>
-          </div>
-          <div class="card-container-1">
-            <div class="card-container-one">
-              <div class="img-bx">
-                <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" />
               </div>
+              <p>A Danger Message</p>
+            </div>
+            <button class="close">
+              <svg height="18px" id="Layer_1" style="enable-background: new 0 0 512 512" version="1.1"
+                viewBox="0 0 512 512" width="18px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#69727D"
+                  d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <iframe id="code-snippet"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=826&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522Alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522success%2520alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522Layer_1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520style%253D%2522enable-background%253A%2520new%25200%25200%2520128%2520128%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520version%253D%25221.1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%2520128%2520128%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xml%253Aspace%253D%2522preserve%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253Axlink%253D%2522http%253A%252F%252Fwww.w3.org%252F1999%252Fxlink%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cg%253E%253Ccircle%2520fill%253D%2522%2523fff%2522%2520cx%253D%252264%2522%2520cy%253D%252264%2522%2520r%253D%252264%2522%2520%252F%253E%253C%252Fg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522%25233EBD61%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520d%253D%2522M54.3%252C97.2L24.8%252C67.7c-0.4-0.4-0.4-1%252C0-1.4l8.5-8.5c0.4-0.4%252C1-0.4%252C1.4%252C0L55%252C78.1l38.2-38.2%2520%2520%2520c0.4-0.4%252C1-0.4%252C1.4%252C0l8.5%252C8.5c0.4%252C0.4%252C0.4%252C1%252C0%252C1.4L55.7%252C97.2C55.3%252C97.6%252C54.7%252C97.6%252C54.3%252C97.2z%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EA%2520Success%2520Message%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252218px%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522Layer_1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520style%253D%2522enable-background%253A%2520new%25200%25200%2520512%2520512%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520version%253D%25221.1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%2520512%2520512%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252218px%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xml%253Aspace%253D%2522preserve%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253Axlink%253D%2522http%253A%252F%252Fwww.w3.org%252F1999%252Fxlink%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522%252369727D%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520d%253D%2522M437.5%252C386.6L306.9%252C256l130.6-130.6c14.1-14.1%252C14.1-36.8%252C0-50.9c-14.1-14.1-36.8-14.1-50.9%252C0L256%252C205.1L125.4%252C74.5%2520%2520c-14.1-14.1-36.8-14.1-50.9%252C0c-14.1%252C14.1-14.1%252C36.8%252C0%252C50.9L205.1%252C256L74.5%252C386.6c-14.1%252C14.1-14.1%252C36.8%252C0%252C50.9%2520%2520c14.1%252C14.1%252C36.8%252C14.1%252C50.9%252C0L256%252C306.9l130.6%252C130.6c14.1%252C14.1%252C36.8%252C14.1%252C50.9%252C0C451.5%252C423.4%252C451.5%252C400.6%252C437.5%252C386.6z%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- alert doc ends -->
+
+      <!-- avatar doc start  -->
+      <div class="avatar-doc doc" id="avatar">
+        <div class="">
+          <h1>Avatar 👤</h1>
+        </div>
+        <div class="">
+          <p>
+            The Catalyst UI Avatar component is a powerful tool for displaying
+            user profile pictures in an elegant and customizable way. Whether
+            it's showcasing profile information on a dedicated page or gracing
+            the navigation bar, Avatars add a personal touch to your web
+            applications.
+          </p>
+        </div>
+        <div class="">
+          <h2>Sample Avatar</h2>
+        </div>
+        <div class="">
+          <p>Here's a quick guide:</p>
+        </div>
+        <div class="">
+          <p>
+            Class: 'avatar-container' . Include this class to create an Avatar
+            container.
+          </p>
+        </div>
+
+        <div class="">
+          <h3>Sizes:</h3>
+          <ul>
+            <li>Large: avatar-large 🌟</li>
+            <li>Big: avatar-big 🚀</li>
+            <li>Medium: avatar-medium 🌈</li>
+            <li>Small: avatar-small 🔍</li>
+          </ul>
+        </div>
+        <div class="">
+          <p>
+            You need to include class avatar-container and for size add class
+            according to size.(e.g. class="avatar-container avatar-large")
+          </p>
+        </div>
+        <div class="avatar-cont">
+          <div class="avatar-container avatar-large">
+            <img src="./assets/Images/avtar-1.jpg" alt="" />
+          </div>
+          <div class="avatar-container avatar-big">
+            <img src="./assets/Images/avtar-2.jpg" alt="" />
+          </div>
+          <div class="avatar-container avatar-medium">
+            <img src="./assets/Images/avtar-3.jpg" alt="" />
+          </div>
+          <div class="avatar-container avatar-small">
+            <img src="./assets/Images/avtar-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="">
+          <iframe id="code-snippet" class="avtar-frame"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=826&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522avatar-cont%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-1.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-big%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-2.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-3.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-4.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- avatar doc ends  -->
+
+      <!-- badge doc start -->
+      <div class="badge-doc doc" id="badge">
+        <div class="">
+          <h1>Badge 🛡️</h1>
+        </div>
+        <div class="">
+          <p>
+            The Badge Icon component is a versatile element that allows you to
+            add visually appealing badges to highlight important
+            information,statuses or notifications.
+          </p>
+        </div>
+        <div class="">
+          <h2>Sample-1 (Pulse Badge)</h2>
+        </div>
+        <div class="">
+          <p>Use class : 'pulse' to apply Badge Pulse.</p>
+        </div>
+        <div class="badge">
+          <div class="container">
+            <div class="pulse"></div>
+            <i class="far fa-bell"></i>
+          </div>
+        </div>
+        <div class="">
+          <iframe id="code-snippet-badge-1"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=615&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pulse%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <div class="">
+          <h2>Sample-2 (Color Badge)</h2>
+        </div>
+        <div class="">
+          <p>
+            Four type of badges are available which can be used with Avatar.
+            Use class names red-badge, green-badge, orange-badge, blue-badge
+            for different badges.
+          </p>
+        </div>
+        <div class="avatar-cont">
+          <div class="avatar-container avatar-large">
+            <img src="./assets/Images/avtar-1.jpg" alt="" />
+            <span class="red-badge"></span>
+          </div>
+          <div class="avatar-container avatar-big">
+            <img src="./assets/Images/avtar-2.jpg" alt="" />
+            <span class="green-badge"></span>
+          </div>
+          <div class="avatar-container avatar-medium">
+            <img src="./assets/Images/avtar-3.jpg" alt="" />
+            <span class="orange-badge"></span>
+          </div>
+          <div class="avatar-container avatar-small">
+            <img src="./assets/Images/avtar-4.jpg" alt="" />
+            <span class="blue-badge"></span>
+          </div>
+        </div>
+        <div class="">
+          <iframe id="code-snippet-badge-2"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=615&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522avatar-cont%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522red-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-big%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-2.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522green-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-3.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522orange-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520avatar-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Favtar-4.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522blue-badge%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- badge doc ends -->
+
+      <!-- button doc start -->
+      <div class="btn-doc doc" id="btn">
+        <div class="">
+          <h1>Button</h1>
+        </div>
+        <div class="">
+          <h2>Variants</h2>
+        </div>
+        <div class="">
+          <p>
+            Catalyst UI includes a variety of button variants, each designed
+            to serve a specific semantic purpose and offer enhanced control
+            over your application's user interface. Use class:'btn' to create
+            button . To create variant buttons use classes given below.
+          </p>
+        </div>
+        <div class="">
+          <h3>Button Variants:</h3>
+          <ul>
+            <li>.btn-primary</li>
+            <li>.btn-secondary</li>
+            <li>.btn-success</li>
+            <li>.btn-warning</li>
+            <li>.btn-danger</li>
+            <li>.btn-info</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+        <div class="">
+          <iframe id="code-snippet-btn"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <div class="">
+          <h2>Outline Buttons</h2>
+        </div>
+        <div class="">
+          To create an outline button, simply replace the default modifier
+          classes with the .btn-outline-* classes. These classes remove all
+          background images and colors, giving your buttons a clean and
+          minimalistic appearance.
+        </div>
+        <div class="">
+          <h3>Outline Button Variants:</h3>
+          <ul>
+            <li>.btn-outline-primary</li>
+            <li>.btn-outline-secondary</li>
+            <li>.btn-outline-success</li>
+            <li>.btn-outline-warning</li>
+            <li>.btn-outline-danger</li>
+            <li>.btn-outline-info</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-outline-primary">
+            Primary
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            Secondary
+          </button>
+          <button type="button" class="btn btn-outline-success">
+            Success
+          </button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-warning">
+            Warning
+          </button>
+          <button type="button" class="btn btn-outline-info">Info</button>
+          <button type="button" class="btn btn-outline-light">Light</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+        <div class="">
+          <iframe id="code-snippet-btn"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-info%2522%253EInfo%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-light%2522%253ELight%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-dark%2522%253EDark%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <div class="">
+          <h2>Shimmer button</h2>
+        </div>
+        <div class="">To use Shimmer button put class : 'btn-shimmer'</div>
+        <div class="btn-container shimmer">
+          <button class="btn-shimmer">Click me</button>
+        </div>
+        <div class="">
+          <iframe id="code-snippet-btn"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-shimmer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Click%2520me%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- button doc ends -->
+
+      <!-- card start -->
+      <div class="card-doc doc" id="card">
+        <div class="">
+          <h1>Card 📇</h1>
+        </div>
+        <div class="">
+          <p>
+            The Catalyst UI Card component is a versatile and visually
+            appealing element designed to organize and showcase information
+            within your web applications. Create engaging user interfaces by
+            leveraging the power of Catalyst UI's Card component.
+          </p>
+        </div>
+        <div class="card-container-1">
+          <div class="card-container-one">
+            <div class="img-bx">
+              <img src="https://i.postimg.cc/dQ7zWbS5/img-4.jpg" alt="img" />
+            </div>
+            <div class="content">
+              <div class="detail">
+                <h2>Emilia Roy<br /><span>Senior Designer</span></h2>
+                <ul class="sci">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <iframe id="code-snippet"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522img-bx%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fi.postimg.cc%252FdQ7zWbS5%252Fimg-4.jpg%2522%2520alt%253D%2522img%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522detail%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EEmilia%2520Roy%253Cbr%2520%252F%253E%253Cspan%253ESenior%2520Designer%253C%252Fspan%253E%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522sci%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-facebook-f%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-twitter%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-linkedin-in%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-instagram%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <div class="">
+          <h2>SAMPLE-2</h2>
+        </div>
+        <div class="card-container-2">
+          <div class="card-container-two">
+            <div class="face face1">
               <div class="content">
-                <div class="detail">
-                  <h2>Emilia Roy<br /><span>Senior Designer</span></h2>
-                  <ul class="sci">
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
+                <img src="./assets/Images/hsd-card.jpg" alt="" />
+                <h3>HSD</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quas cum cumque minus iste veritatis provident at.
+                </p>
+                <a href="#">Read More</a>
               </div>
             </div>
           </div>
-          <div class="">
-            <iframe
-              id="code-snippet"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522img-bx%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fi.postimg.cc%252FdQ7zWbS5%252Fimg-4.jpg%2522%2520alt%253D%2522img%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522detail%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EEmilia%2520Roy%253Cbr%2520%252F%253E%253Cspan%253ESenior%2520Designer%253C%252Fspan%253E%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522sci%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-facebook-f%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-twitter%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-linkedin-in%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-instagram%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+        </div>
+        <div class="">
+          <iframe id="code-snippet"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-container-two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522face%2520face1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Fhsd-card.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EHSD%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522face%2520face2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quas%2520cum%2520cumque%2520minus%2520iste%2520veritatis%2520provident%2520at.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ERead%2520More%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- card ends -->
+
+      <!-- progress bar start -->
+      <div class="progress-doc doc" id="prog">
+        <div class="">
+          <h1>Progress Bar 📊</h1>
+        </div>
+        <div class="">
+          <p>
+            The Catalyst UI Progress Bar component is a dynamic and visually
+            appealing element designed to represent the progress of a task or
+            process.
+          </p>
+        </div>
+        <div class="">
+          <h2>Simple Progress Bar -</h2>
+        </div>
+        <div class="prog-container">
+          <div class="s-progress progress-danger">
+            <span>50%</span>
           </div>
-          <div class="">
-            <h2>SAMPLE-2</h2>
+          <div class="s-progress progress-success">
+            <span>75%</span>
           </div>
-          <div class="card-container-2">
-            <div class="card-container-two">
-              <div class="face face1">
-                <div class="content">
-                  <img src="./assets/Images/hsd-card.jpg" alt="" />
-                  <h3>HSD</h3>
-                </div>
-              </div>
-              <div class="face face2">
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas cum cumque minus iste veritatis provident at.
-                  </p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
+          <div class="s-progress progress-info">
+            <span>25%</span>
           </div>
-          <div class="">
-            <iframe
-              id="code-snippet"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-container-two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522face%2520face1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252FImages%252Fhsd-card.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EHSD%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522face%2520face2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quas%2520cum%2520cumque%2520minus%2520iste%2520veritatis%2520provident%2520at.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ERead%2520More%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+          <div class="s-progress progress-warning">
+            <span>90%</span>
           </div>
         </div>
-        <!-- card ends -->
+        <div class="">
+          <iframe id="code-snippet-prog"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-danger%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E50%2525%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-success%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E75%2525%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-info%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E25%2525%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-warning%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E90%2525%253C%252Fspan%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+        <div class="">
+          <h2>Circular Progress Bar With Numbers</h2>
+        </div>
 
-        <!-- progress bar start -->
-        <div class="progress-doc doc" id="prog">
-          <div class="">
-            <h1>Progress Bar 📊</h1>
+        <div class="progress-container-2">
+          <div class="circle per-0">
+            <div class="inner">0%</div>
           </div>
-          <div class="">
-            <p>
-              The Catalyst UI Progress Bar component is a dynamic and visually
-              appealing element designed to represent the progress of a task or
-              process.
-            </p>
+          <div class="circle per-25">
+            <div class="inner">25%</div>
           </div>
-          <div class="">
-            <h2>Simple Progress Bar -</h2>
+          <div class="circle per-50">
+            <div class="inner">50%</div>
           </div>
-          <div class="prog-container">
-            <div class="s-progress progress-danger">
-              <span>50%</span>
-            </div>
-            <div class="s-progress progress-success">
-              <span>75%</span>
-            </div>
-            <div class="s-progress progress-info">
-              <span>25%</span>
-            </div>
-            <div class="s-progress progress-warning">
-              <span>90%</span>
-            </div>
+          <div class="circle per-75">
+            <div class="inner">75%</div>
           </div>
-          <div class="">
-            <iframe
-              id="code-snippet-prog"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-danger%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E50%2525%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-success%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E75%2525%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-info%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E25%2525%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522s-progress%2520progress-warning%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E90%2525%253C%252Fspan%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
-          <div class="">
-            <h2>Circular Progress Bar With Numbers</h2>
-          </div>
-
-          <div class="progress-container-2">
-            <div class="circle per-0">
-              <div class="inner">0%</div>
-            </div>
-            <div class="circle per-25">
-              <div class="inner">25%</div>
-            </div>
-            <div class="circle per-50">
-              <div class="inner">50%</div>
-            </div>
-            <div class="circle per-75">
-              <div class="inner">75%</div>
-            </div>
-            <div class="circle per-100">
-              <div class="inner">100%</div>
-            </div>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-prog"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522progress-container-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-0%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E0%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-25%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E25%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-50%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E50%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-75%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E75%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-100%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E100%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+          <div class="circle per-100">
+            <div class="inner">100%</div>
           </div>
         </div>
-        <!-- progress bar ends -->
-
-        <!-- text-utility start -->
-        <div class="text-utility-doc doc" id="text-u">
-          <div class="">
-            <h1>Text Utilities 📝</h1>
-          </div>
-          <div class="">
-            <p>
-              Text utilities in a component library often include a set of
-              predefined styles and classes that can be applied to text elements
-              to achieve consistent and visually appealing typography across the
-              application.
-            </p>
-          </div>
-          <div class="txt-container">
-            <h1 class="heading">Heading Text</h1>
-            <h3 class="small-text">Small text</h3>
-            <h2 class="uppercase-text">uppercase text</h2>
-            <h2 class="text-capitalize">capitalize text</h2>
-            <h2 class="grey-text">Grey Text</h2>
-            <h3 class="centered-text">Center</h3>
-          </div>
-          <div class="">
-            <iframe
-              id="code-snippet-prog"
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Ch1%2520class%253D%2522heading%2522%253EHeading%2520Text%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522small-text%2522%253ESmall%2520text%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522uppercase-text%2522%253Euppercase%2520text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-capitalize%2522%253Ecapitalize%2520text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522grey-text%2522%253EGrey%2520Text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522centered-text%2522%253ECenter%253C%252Fh3%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
+        <div class="">
+          <iframe id="code-snippet-prog"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522progress-container-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-0%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E0%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-25%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E25%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-50%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E50%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-75%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E75%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522circle%2520per-100%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522inner%2522%253E100%2525%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
         </div>
-        <!-- text-utility end -->
+      </div>
+      <!-- progress bar ends -->
 
-        <!-- text-effects start -->
-        <div class="txt-effect-doc doc" id="txt-effect">
-          <div class="">
-            <h1>
-              Text Effects 
-            </h1>
-          </div>
-          <div class="">
-            <p>
-              Enhance your text presentation with Catalyst UI's versatile text effects. Easily apply these classes to your text elements to achieve engaging and visually appealing styles.
-            </p>
-          </div>
-          <div class="txt-container effect">
-            <h1 class="heading">Text Shadow</h1>
-            <h2 class="small-text"> Text Glow</h2>
-            <h2 class="uppercase-text"> Transparent Text</h2>
-            <h2 class="text-capitalize">Text Gradient</h2>
-            <h2 class="grey-text"> Text Flip</h2>
-            <h1 class="unicorn-text">CatalystUI</h1>
-          </div>
+      <!-- text-utility start -->
+      <div class="text-utility-doc doc" id="text-u">
+        <div class="">
+          <h1>Text Utilities 📝</h1>
         </div>
-        <!-- text-effects end -->
-      </section>
-    </div>
-    <!-- footer start -->
-    <!-- 
+        <div class="">
+          <p>
+            Text utilities in a component library often include a set of
+            predefined styles and classes that can be applied to text elements
+            to achieve consistent and visually appealing typography across the
+            application.
+          </p>
+        </div>
+        <div class="">
+          <p>
+            use classes : .heading,
+            .small-text ,
+            .uppercase-text ,
+            .text-capitalize,
+            .grey-text &
+            .centered-text for applying these text utilities.
+          </p>
+        </div>
+        <div class="txt-container">
+          <h1 class="heading">Heading Text</h1>
+          <h3 class="small-text">Small text</h3>
+          <h2 class="uppercase-text">uppercase text</h2>
+          <h2 class="text-capitalize">capitalize text</h2>
+          <h2 class="grey-text">Grey Text</h2>
+          <h3 class="centered-text">Center</h3>
+        </div>
+        <div class="">
+          <iframe id="code-snippet-prog"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Ch1%2520class%253D%2522heading%2522%253EHeading%2520Text%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522small-text%2522%253ESmall%2520text%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522uppercase-text%2522%253Euppercase%2520text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-capitalize%2522%253Ecapitalize%2520text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522grey-text%2522%253EGrey%2520Text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522centered-text%2522%253ECenter%253C%252Fh3%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- text-utility end -->
+
+      <!-- text-effects start -->
+      <div class="txt-effect-doc doc" id="txt-effect">
+        <div class="">
+          <h1>
+            Text Effects 🖌️
+          </h1>
+        </div>
+        <div class="">
+          <p>
+            Enhance your text presentation with Catalyst UI's versatile text effects. Easily apply these classes to your
+            text elements to achieve engaging and visually appealing styles.
+          </p>
+        </div>
+        <div class="">
+          <p>
+            use classes : .txt-shadow,
+            .txt-glow,
+            .txt-trans,
+            .text-unicorn,
+            .txt-grad &
+            .txt-flip for these amazinig text effects.
+          </p>
+        </div>
+        <div class="txt-container effect">
+          <h1 class="txt-shadow">Text Shadow</h1>
+          <h2 class="txt-glow"> Text Glow</h2>
+          <h2 class="txt-trans"> Transparent Text</h2>
+          <h1 class="text-unicorn">hello</h1>
+          <h2 class="txt-grad">Text Gradient</h2>
+          <h2 class="txt-flip"> Text Flip</h2>
+        </div>
+
+        <div class="">
+          <iframe id="code-snippet-prog"
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=text&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Ch1%2520class%253D%2522txt-shadow%2522%253EText%2520Shadow%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522txt-glow%2522%253E%2520Text%2520Glow%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522txt-trans%2522%253E%2520Transparent%2520Text%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522text-unicorn%2522%253Ehello%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522txt-grad%2522%253EText%2520Gradient%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522txt-flip%2522%253E%2520Text%2520Flip%253C%252Fh2%253E"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <!-- text-effects end -->
+    </section>
+  </div>
+  <!-- footer start -->
+  <!-- 
     <div class="footer-line doc">
       <div class=""></div>
       <p>© 2024 Copyright: CUI-COMPONENTS_LIBRARY</p>
@@ -1112,7 +1014,8 @@
       </div>
     </div> -->
 
-    <!-- footer end -->
-    <script src="./assets/Js/script.js"></script>
-  </body>
+  <!-- footer end -->
+  <script src="./assets/Js/script.js"></script>
+</body>
+
 </html>

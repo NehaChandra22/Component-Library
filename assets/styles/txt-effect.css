@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap");
+.txt-shadow {
+  text-shadow: 2px 2px #cc56d7;
+}
+.txt-glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.txt-trans {
+  opacity: 0.5;
+}
+.txt-grad {
+  background: -webkit-linear-gradient(#eee, #2e8dc0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.txt-flip {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: rgb(34, 0, 128);
+}
+.text-unicorn {
+  font-family: "Calligraffitti", cursive;
+  font-weight: 700;
+  text-shadow: -15px 5px 20px #ced0d3;
+  transform: translate(-10%, 0%);
+  letter-spacing: -0.1rem;
+  text-align: center;
+  color: #f9f1cc;
+  text-shadow: 2.5px 2.5px 0px #ffb650, 5px 5px 0px #ffd662, 7px 7px 0px #ff80bf,
+    10px 10px 0px #ef5097, 13px 13px 0px #6868ac, 16px 16px 0px #90b1e0;
+}
