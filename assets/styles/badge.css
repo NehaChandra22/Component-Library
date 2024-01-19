@@ -1,173 +1,176 @@
 .pulse {
-  border-radius: 10px;
-  position: absolute;
-  /*Change to move pulse*/
-  top: 0px;
-  right: 52px;
-  /*End Change*/
-  width: px;
-  height: 8px;
-  animation: pulse 0.85s ease-in-out infinite;
+    border-radius: 10px;
+    position: absolute;
+    /*Change to move pulse*/
+    top: 0px;
+    right: 52px;
+    /*End Change*/
+    width: px;
+    height: 8px;
+    animation: pulse 0.85s ease-in-out infinite;
 }
+
 /* Style 1 - Outer pulsing with icon */
 .pulse:before {
-  content: "";
-  display: block;
-  background-color: #ea6565;
-  border-radius: 20px;
-  position: absolute;
-  /*Change to align pulse*/
-  top: 36px;
-  right: 2px;
-  /*End Change*/
-  height: 14px;
-  width: 14px;
-  transform: scale(1);
-  animation: pulse-fade 2s infinite;
+    content: "";
+    display: block;
+    background-color: #ea6565;
+    border-radius: 20px;
+    position: absolute;
+    /*Change to align pulse*/
+    top: 36px;
+    right: 2px;
+    /*End Change*/
+    height: 14px;
+    width: 14px;
+    transform: scale(1);
+    animation: pulse-fade 2s infinite;
 }
 
 /* Inner Pulsing */
 @keyframes pulse {
-  0% {
-    transform: scale(0.9);
-  }
+    0% {
+        transform: scale(0.9);
+    }
 
-  50% {
-    transform: scale(1);
-  }
+    50% {
+        transform: scale(1);
+    }
 
-  100% {
-    transform: scale(0.9);
-  }
+    100% {
+        transform: scale(0.9);
+    }
 }
 
 /* Outer Pulsing */
 @keyframes pulse-fade {
-  0% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgb(234, 101, 101, 0.7);
-  }
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgb(234, 101, 101, 0.7);
+    }
 
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgb(234, 101, 101, 0);
-  }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgb(234, 101, 101, 0);
+    }
 
-  100% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgb(234, 101, 101, 0);
-  }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgb(234, 101, 101, 0);
+    }
 }
 
 /* Body, containers, and icon styles */
 
 .badge .container {
-  width: 12rem;
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  border: 8px solid rgb(60, 60, 147);
-  border-radius: 20px;
+    width: 12rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    border: 8px solid rgb(60, 60, 147);
+    border-radius: 20px;
 }
 
 .badge .container i {
-  font-size: 5.3rem;
-  color: #0f0f1070;
+    font-size: 5.3rem;
+    color: #0f0f1070;
 }
 
 .badge {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* sample-2 */
 
 .red-badge {
-  height: 30px;
-  border-radius: 100%;
-  border: 3px solid white;
-  top: 75%;
-  right: 8px;
-  width: 30px;
-  background-color: red;
-  z-index: 20;
-  position: absolute;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid white;
+    top: 75%;
+    right: 8px;
+    width: 30px;
+    background-color: red;
+    z-index: 20;
+    position: absolute;
 }
 
 .green-badge {
-  height: 25px;
-  border-radius: 50%;
-  border: 3px solid white;
-  top: 75%;
-  right: 8px;
-  width: 25px;
-  background-color: green;
-  z-index: 20;
-  position: absolute;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 75%;
+    right: 8px;
+    width: 25px;
+    background-color: green;
+    z-index: 20;
+    position: absolute;
 }
+
 .orange-badge {
-  height: 20px;
-  border-radius: 50%;
-  border: 3px solid white;
-  top: 75%;
-  right: 8px;
-  width: 20px;
-  background-color: orange;
-  z-index: 20;
-  position: absolute;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 75%;
+    right: 8px;
+    width: 20px;
+    background-color: orange;
+    z-index: 20;
+    position: absolute;
 }
+
 .blue-badge {
-  height: 15px;
-  border-radius: 100%;
-  border: 3px solid white;
-  top: 75%;
-  right: 8px;
-  width: 15px;
-  background-color: blue;
-  z-index: 20;
-  position: absolute;
+    height: 15px;
+    border-radius: 100%;
+    border: 3px solid white;
+    top: 75%;
+    right: 8px;
+    width: 15px;
+    background-color: blue;
+    z-index: 20;
+    position: absolute;
 }
 
 @media screen and (max-width: 568px) {
-  /* sample-1 */
-  .badge .container {
-    width: 6rem;
-    height: 5.5rem;
 
-    border: 3px solid rgb(60, 60, 147);
-  }
-  .badge .container i {
-    font-size: 3.3rem;
-  }
-  .pulse:before {
-    top: 20px;
-    right: -35px;
-  }
+    /* sample-1 */
+    .badge .container {
+        width: 6rem;
+        height: 5.5rem;
+        border: 3px solid rgb(60, 60, 147);
+    }
 
-  /* sample-2 */
-  .red-badge {
-    height: 20px;
+    .badge .container i {
+        font-size: 3.3rem;
+    }
 
-    width: 20px;
-  }
+    .pulse:before {
+        top: 20px;
+        right: -35px;
+    }
 
-  .green-badge {
-    height: 16px;
+    /* sample-2 */
+    .red-badge {
+        height: 20px;
+        width: 20px;
+    }
 
-    width: 16px;
-  }
-  .orange-badge {
-    height: 12px;
+    .green-badge {
+        height: 16px;
+        width: 16px;
+    }
 
-    width: 12px;
-  }
-  .blue-badge {
-    height: 10px;
+    .orange-badge {
+        height: 12px;
+        width: 12px;
+    }
 
-    width: 10px;
-  }
+    .blue-badge {
+        height: 10px;
+        width: 10px;
+    }
 }
