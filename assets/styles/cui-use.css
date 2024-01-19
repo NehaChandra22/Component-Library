@@ -652,9 +652,13 @@ gap:20px;
     width: 100px;
     height: 100px;
   }
-  .footer-line.doc {
+/* text utility */
+.text-utility-doc{
+  height: 43rem;
+}
+  /* .footer-line.doc {
     display: flex;
     position: relative;
     bottom: -46px;
-  }
+  } */
 }
