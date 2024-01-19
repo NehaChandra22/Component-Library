@@ -314,7 +314,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   gap: 25px;
-  line-height: 27px;
+  line-height: 27px; 
   }
 .btn-container {
   width: 100%;
@@ -394,30 +394,18 @@ body {
     gap: 22px;
   }
 
-  .intro-doc h1,
-  .install-doc h1,
-  .browser-doc h1,
-  .accordian-doc h1,
-  .alert-doc h1 {
+   .doc h1{
     font-size: 1.5rem;
   }
 
-  .intro-doc h2 .browser-doc h2,
-  .accordian-doc h2,
-  .alert-doc h2 {
+ .doc h2 {
     font-size: 1.3rem;
   }
 
-  .intro-doc h4 {
+  .doc h4 {
     font-size: 1rem;
   }
-
-  .intro-doc p,
-  .browser-doc p,
-  .accordian-doc p,
-  .alert-doc p {
-    font-size: 1rem;
-  }
+ 
 
   .install-doc {
     height: 64rem;
@@ -542,17 +530,28 @@ body {
   /* accordion */
 
   .accordian-doc {
-    height: 99.6rem;
+    height: 88.6rem;
   }
-
+ 
   /* alert */
   .alert-doc {
+    height: 53rem;
     line-height: 20px;
   }
   /* avatar */
   .avatar-doc {
+    height: 50rem;
+
     line-height: 20px;
   }
+  /* badge */
+  .badge-doc{
+    height:56rem;
+  }
+  /* button */
+  .btn-doc {
+    height: 113.5rem;     
+    }
   .footer-line.doc {
     display: flex;
     position: relative;
