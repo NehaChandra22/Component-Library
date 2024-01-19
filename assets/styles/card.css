@@ -111,12 +111,12 @@
 }
 
 .card-container-two:hover .face.face1{
-    background: #ff0057;
+    background: #5a1d89;
     transform: translateY(0);
 }
 
 .card-container-two .face.face1 .content{
-    opacity: 0.2;
+    opacity: 0.5;
     transition: 0.5s;
 }
 
@@ -125,11 +125,12 @@
 }
 
 .card-container-two .face.face1 .content img{
-    max-width: 100px;
+    max-width: 300px;
+  
 }
 
 .card-container-two .face.face1 .content h3{
-    margin: 10px 0 0;
+    margin: 0px 0px 50px 0px ;
     padding: 0;
     color: #fff;
     text-align: center;
