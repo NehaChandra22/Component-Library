@@ -523,6 +523,8 @@ main {
     background-color: var(--dark-blue-color);
     display: none;
     height: 100vh;
+    position: relative;
+    top:50px;
   }
 
   .left-sidebar .nav-items {
