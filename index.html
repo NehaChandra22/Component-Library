@@ -34,10 +34,10 @@
         </div>
         <div class="git"><i class="fa-brands fa-square-github"></i></div>
         <div class="dark-mode">
-          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+          <i onclick="darkMode()" class="fa-solid fa-moon"></i>
         </div>
         <div class="light-mode">
-          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+          <i onclick="lightMode()" class="fa-solid fa-moon"></i>
         </div>
       </div>
       <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
@@ -52,18 +52,32 @@
     <div class="left-sidebar">
       <div class="nav-items">
         <div class="items">
-          <a href="./index.html">Home</a>
+          <a href="./index.html" onclick="hideSidebar()">Home</a>
         </div>
 
         <div class="items">
-          <a href="./documentation.html">Documentation</a>
+          <a href="./documentation.html" onclick="hideSidebar()"
+            >Documentation</a
+          >
         </div>
-        <div class="git"><i class="fa-brands fa-square-github"></i></div>
+        <div class="git">
+          <a href="https://github.com/NehaChandra22">
+            <i class="fa-brands fa-square-github" onclick="hideSidebar()"></i>
+          </a>
+        </div>
         <div class="dark-mode">
-          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+          <i
+            onclick="darkMode()"
+            class="fa-solid fa-moon"
+            onclick="hideSidebar()"
+          ></i>
         </div>
         <div class="light-mode">
-          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+          <i
+            onclick="lightMode()"
+            class="fa-solid fa-moon"
+            onclick="hideSidebar()"
+          ></i>
         </div>
       </div>
     </div>

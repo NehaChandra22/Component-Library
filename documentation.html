@@ -39,11 +39,11 @@
           <a href="./documentation.html">Documentation</a>
         </div>
         <div class="git"><i class="fa-brands fa-square-github"></i></div>
-        <div class="dark-mode">
-          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+        <div onclick="darkMode()" class="dark-mode">
+          <i class="fa-solid fa-moon"></i>
         </div>
-        <div class="light-mode">
-          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+        <div class="light-mode" onclick="lightMode()">
+          <i class="fa-solid fa-moon"></i>
         </div>
       </div>
       <div class="hamburger-icon" id="hamburger-L" onclick="showSidebar()">
@@ -58,18 +58,32 @@
     <div class="left-sidebar">
       <div class="nav-items">
         <div class="items">
-          <a href="#about-us">Home</a>
+          <a href="./index.html" onclick="hideSidebar()">Home</a>
         </div>
 
         <div class="items">
-          <a href="#items">Documentation</a>
+          <a href="./documentation.html" onclick="hideSidebar()"
+            >Documentation</a
+          >
         </div>
-        <div class="git"><i class="fa-brands fa-square-github"></i></div>
+        <div class="git">
+          <a href="https://github.com/NehaChandra22">
+            <i class="fa-brands fa-square-github" onclick="hideSidebar()"></i>
+          </a>
+        </div>
         <div class="dark-mode">
-          <i onclick="darkmode()" class="fa-solid fa-moon"></i>
+          <i
+            onclick="darkMode()"
+            class="fa-solid fa-moon"
+            onclick="hideSidebar()"
+          ></i>
         </div>
         <div class="light-mode">
-          <i onclick="lightmode()" class="fa-solid fa-moon"></i>
+          <i
+            onclick="lightMode()"
+            class="fa-solid fa-moon"
+            onclick="hideSidebar()"
+          ></i>
         </div>
       </div>
     </div>
@@ -81,10 +95,12 @@
         <div class="menu menu-1">
           <h3><i class="fa-solid fa-book-open"></i> Getting Started</h3>
           <ul class="menu-1-list">
-            <li><a href="#intro"> Introduction</a></li>
-            <li><a href="#install"> Installation</a></li>
+            <li class="active">
+              <a href="#intro" onclick="hideAside()"> Introduction</a>
+            </li>
+            <li><a href="#install" onclick="hideAside()"> Installation</a></li>
             <li>
-              <a href="#browser">
+              <a href="#browser" onclick="hideAside()">
                 Browsers <br />
                 & Devices
               </a>
@@ -94,16 +110,20 @@
         <div class="menu menu-2">
           <h3><i class="box-icon fa-solid fa-cubes"></i> Components</h3>
           <ul class="menu-2-list">
-            <li><a href="#accordian"> Accordian </a></li>
-            <li><a href="#alert"> Alert </a></li>
-            <li><a href="#avatar"> Avatar </a></li>
-            <li><a href="#badge"> Badge</a></li>
-            <li><a href="#btn"> Button </a></li>
-            <li><a href="#card"> Card </a></li>
-            <li><a href="#prog">Progress </a></li>
-            <li><a href="#text-u"> Text Utilities </a></li>
-            <li><a href="#txt-effect"> Text Effects</a></li>
-            <li><a href="#nav-doc">Navbar </a></li>
+            <li><a href="#accordian" onclick="hideAside()"> Accordian </a></li>
+            <li><a href="#alert" onclick="hideAside()"> Alert </a></li>
+            <li><a href="#avatar" onclick="hideAside()"> Avatar </a></li>
+            <li><a href="#badge" onclick="hideAside()"> Badge</a></li>
+            <li><a href="#btn" onclick="hideAside()"> Button </a></li>
+            <li><a href="#card" onclick="hideAside()"> Card </a></li>
+            <li><a href="#prog" onclick="hideAside()">Progress </a></li>
+            <li>
+              <a href="#text-u" onclick="hideAside()"> Text Utilities </a>
+            </li>
+            <li>
+              <a href="#txt-effect" onclick="hideAside()"> Text Effects</a>
+            </li>
+            <li><a href="#nav-doc" onclick="hideAside()">Navbar </a></li>
           </ul>
         </div>
       </aside>

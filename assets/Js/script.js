@@ -1,62 +1,92 @@
-const sidebar = document.querySelector(".left-sidebar");
-const hidehamburgerL = document.querySelector("#hamburger-L");
-const hidehamburgerR = document.querySelector("#hamburger-R");
-const hidecrossL = document.querySelector("#cross-icon-L");
-const hidecrossR = document.querySelector("#cross-icon-R");
-const navbar = document.querySelector(".navbar");
-const Darkmode = document.querySelector(".dark-mode");
-const Lightmode = document.querySelector(".light-mode");
+const sideBar = document.querySelector(".left-sidebar");
+const hideHamBurgerL = document.querySelector("#hamburger-L");
+const hideHamBurgerR = document.querySelector("#hamburger-R");
+const hideCrossL = document.querySelector("#cross-icon-L");
+const hideCrossR = document.querySelector("#cross-icon-R");
+const navBar = document.querySelector(".navbar");
+const darkModeC = document.querySelector(".dark-mode");
+const lightModeC = document.querySelector(".light-mode");
 const body = document.querySelector("body");
-const linkcont = document.querySelector(".link-container");
+const linkCont = document.querySelector(".link-container");
 const aside = document.querySelector("aside");
 const rightDoc = document.querySelector(".right-doc");
+const listItems = document.querySelectorAll(" .menu li");
+// const Leftdoch1 = document.querySelector(" .main-doc aside.left-doc .menu h3");
+// const Leftdoc3 = document.querySelector(" .main-doc .left-doc .menu h3");
+// const Leftdoca = document.querySelector(" .main-doc .left-doc ul li a");
+// const docText = document.querySelector('.main-doc ');
+
 function showSidebar() {
-  sidebar.style.display = "block";
-  hidecrossL.style.display = "block";
-  hidehamburgerL.style.display = "none";
+  sideBar.style.display = "block";
+  hideCrossL.style.display = "block";
+  hideHamBurgerL.style.display = "none";
 }
 function hideSidebar() {
-  sidebar.style.display = "none";
-  hidehamburgerL.style.display = "block";
-  hidecrossL.style.display = "none";
+  if (screen.width <= 998) {
+    sideBar.style.display = "none";
+    hideHamBurgerL.style.display = "block";
+    hideCrossL.style.display = "none";
+  }
 }
 
 function showAside() {
   aside.style.display = "block";
-  hidecrossR.style.display = "block";
-  hidehamburgerR.style.display = "none";
+  hideCrossR.style.display = "block";
+  hideHamBurgerR.style.display = "none";
   rightDoc.style.display = "none";
 }
 function hideAside() {
-  aside.style.display = "none";
-  hidehamburgerR.style.display = "block";
-  hidecrossR.style.display = "none";
+  if (screen.width <= 998) {
+    aside.style.display = "none";
+    hideHamBurgerR.style.display = "block";
+    hideCrossR.style.display = "none";
+    rightDoc.style.display = "block";
+  }
 }
+// active-link-bgcolor
+
+listItems.forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    // Remove 'active' class from all li elements
+    listItems.forEach(function (li) {
+      li.classList.remove("active");
+    });
+
+    // Add 'active' class to the clicked li element
+    this.classList.add("active");
+  });
+});
 
 // dark-mode
-function darkmode() {
-  Lightmode.style.display = "block";
-  Darkmode.style.display = "none";
-  navbar.style.backgroundImage = "none";
-  navbar.style.backgroundColor = "black";
+function darkMode() {
+  lightModeC.style.display = "block";
+  darkModeC.style.display = "none";
+  navBar.style.backgroundImage = "none";
+  navBar.style.backgroundColor = "black";
   body.style.backgroundImage = "none";
   body.style.backgroundColor = "black";
-  navbar.style.borderBottom = " 1px solid grey";
-  sidebar.style.backgroundColor = "black";
-  linkcont.style.color = "white";
+  body.style.color = "white";
+  docs.style.backgroundColor = "red";
+  docText.style.color = "white";
+  navBar.style.borderBottom = " 1px solid grey";
+  sideBar.style.backgroundColor = "black";
+  linkCont.style.color = "white";
+  // Leftdoch1.style.color="white";
 }
-function lightmode() {
-  Lightmode.style.display = "none";
-  Darkmode.style.display = "block";
-  navbar.style.backgroundImage = "";
-  navbar.style.backgroundColor = "";
-  body.style.backgroundColor = "";
-  navbar.style.borderBottom = "";
-  sidebar.style.backgroundColor = "";
+function lightMode() {
+  lightModeC.style.display = "none";
+  darkModeC.style.display = "block";
+  navBar.style.backgroundImage = "";
+  navBar.style.backgroundColor = "";
   body.style.backgroundImage = "";
-  linkcont.style.color = "";
+  body.style.backgroundColor = "";
+  body.style.color = "";
+  navBar.style.borderBottom = "";
+  sideBar.style.backgroundColor = "";
+  linkCont.style.color = "black";
+  // rightDoc.style.color = "black";
 }
-//darkmode ends
+// darkMode ends
 
 //top-function
 function topFunction() {
@@ -96,5 +126,3 @@ document.querySelectorAll(".alert-doc .close").forEach(function (closeButton) {
   });
 });
 // alert ends
-
- 
