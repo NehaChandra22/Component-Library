@@ -1,3 +1,21 @@
+:root {
+  --alert-success-bg: rgba(62, 189, 97, 0.2);
+  --alert-success-border: #3ebd61;
+  --alert-success-icon-bg: #3ebd61;
+
+  --alert-info-bg: rgba(0, 108, 227, 0.2);
+  --alert-info-border: #006ce3;
+  --alert-info-icon-bg: #006ce3;
+
+  --alert-warning-bg: rgba(239, 148, 0, 0.2);
+  --alert-warning-border: #ef9400;
+  --alert-warning-icon-bg: #ef9400;
+
+  --alert-danger-bg: rgba(236, 77, 43, 0.2);
+  --alert-danger-border: #ef9400;
+  --alert-danger-icon-bg: #ec4d2b;
+}
+
 .alert-doc .alert {
   display: flex;
   align-items: center;
@@ -12,10 +30,12 @@
     0px 25.7px 111.7px rgba(0, 0, 0, 0.042),
     0px 48px 208.9px rgba(0, 0, 0, 0.05), 0px 115px 500px rgba(0, 0, 0, 0.07);
 }
+
 .alert-doc .content {
   display: flex;
   align-items: center;
 }
+
 .alert-doc .icon {
   padding: 0.5rem;
   margin-right: 1rem;
@@ -26,6 +46,7 @@
     0px 25.7px 111.7px rgba(0, 0, 0, 0.042),
     0px 48px 208.9px rgba(0, 0, 0, 0.05), 0px 115px 500px rgba(0, 0, 0, 0.07);
 }
+
 .alert-doc .close {
   background-color: transparent;
   border: none;
@@ -38,48 +59,54 @@
   align-items: center;
   justify-content: center;
 }
+
 .alert-doc .close:hover {
   background-color: #fff;
 }
 
 .alert-doc .success {
-  background-color: rgba(62, 189, 97, 0.2);
-  border: 2px solid #3ebd61;
+  background-color: var(--alert-success-bg);
+  border: 2px solid var(--alert-success-border);
 }
+
 .alert-doc .success .icon {
-  background-color: #3ebd61;
+  background-color: var(--alert-success-icon-bg);
 }
+
 .alert-doc .info {
-  background-color: rgba(0, 108, 227, 0.2);
-  border: 2px solid #006ce3;
+  background-color: var(--alert-info-bg);
+  border: 2px solid var(--alert-info-border);
 }
+
 .alert-doc .info .icon {
-  background-color: #006ce3;
+  background-color: var(--alert-info-icon-bg);
 }
+
 .alert-doc .warning {
-  background-color: rgba(239, 148, 0, 0.2);
-  border: 2px solid #ef9400;
+  background-color: var(--alert-warning-bg);
+  border: 2px solid var(--alert-warning-border);
 }
+
 .alert-doc .warning .icon {
-  background-color: #ef9400;
+  background-color: var(--alert-warning-icon-bg);
 }
 
 .alert-doc .danger {
-  background-color: rgba(236, 77, 43, 0.2);
-  border: 2px solid #ef9400;
+  background-color: var(--alert-danger-bg);
+  border: 2px solid var(--alert-danger-border);
 }
+
 .alert-doc .danger .icon {
-  background-color: #ec4d2b;
+  background-color: var(--alert-danger-icon-bg);
 }
 
-
-@media screen and (max-width: 468px){
-    .Alert .alert {
-        min-width: 200px;
-        margin-bottom: 0.8rem;
-      }
-      .Alert .alert .icon svg{
-        width: 20px;
-        height: 20px;
-      }
+@media screen and (max-width: 468px) {
+  .Alert .alert {
+    min-width: 200px;
+    margin-bottom: 0.8rem;
+  }
+  .Alert .alert .icon svg {
+    width: 20px;
+    height: 20px;
+  }
 }

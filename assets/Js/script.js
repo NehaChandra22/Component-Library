@@ -11,11 +11,13 @@ const linkCont = document.querySelector(".link-container");
 const aside = document.querySelector("aside");
 const rightDoc = document.querySelector(".right-doc");
 const listItems = document.querySelectorAll(" .menu li");
-// const Leftdoch1 = document.querySelector(" .main-doc aside.left-doc .menu h3");
-// const Leftdoc3 = document.querySelector(" .main-doc .left-doc .menu h3");
-// const Leftdoca = document.querySelector(" .main-doc .left-doc ul li a");
-// const docText = document.querySelector('.main-doc ');
+const preLoad = document.querySelector("#loading");
 
+const preLoader = () => {
+  setTimeout(() => {
+    preLoad.style.display = "none";
+  }, 400);
+};
 function showSidebar() {
   sideBar.style.display = "block";
   hideCrossL.style.display = "block";
@@ -64,15 +66,14 @@ function darkMode() {
   navBar.style.backgroundImage = "none";
   navBar.style.backgroundColor = "black";
   body.style.backgroundImage = "none";
-  body.style.backgroundColor = "black";
+  body.style.backgroundColor = "#030637";
   body.style.color = "white";
-  docs.style.backgroundColor = "red";
   docText.style.color = "white";
   navBar.style.borderBottom = " 1px solid grey";
   sideBar.style.backgroundColor = "black";
-  linkCont.style.color = "white";
-  // Leftdoch1.style.color="white";
+  menuh13.style.setProperty("--dark-blue-color", "#fff");
 }
+
 function lightMode() {
   lightModeC.style.display = "none";
   darkModeC.style.display = "block";
@@ -83,8 +84,6 @@ function lightMode() {
   body.style.color = "";
   navBar.style.borderBottom = "";
   sideBar.style.backgroundColor = "";
-  linkCont.style.color = "black";
-  // rightDoc.style.color = "black";
 }
 // darkMode ends
 
@@ -93,6 +92,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 //top func ends
+
 
 // documentation js--
 

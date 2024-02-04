@@ -10,7 +10,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: #eae6f0;
+  background-color: var(--body-color);
   background-size: 400%;
   background-image: linear-gradient(
     -45deg,
@@ -39,12 +39,18 @@ body {
     background-position: right;
   }
 }
-
+#loading {
+  height: 100vh;
+  width: 100%;
+  background: var(--loader-color) url("../Images/pre-loader.gif") no-repeat
+    center;
+  position: fixed;
+  z-index: 999999;
+}
 .navbar {
   width: 100%;
   height: 64px;
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(
@@ -67,15 +73,15 @@ body {
   font-size: 3rem;
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    var(--dark-blue-color) 0%,
+    var(--purple-color) 29%,
+    var(--dark-pink-color) 67%,
+    var(--yellow-color) 100%
   );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: var(--white-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,15 +123,16 @@ body {
   display: none;
 }
 
-.nav-items a:hover {
+.nav-items .items :hover {
   background-color: var(--light-purple-color);
   border-radius: 10px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .git:hover {
   cursor: pointer;
-  padding: 1px 8px;
+  padding: 1px 10px;
   cursor: pointer;
   border-radius: 10px;
   background-color: var(--light-purple-color);
@@ -133,14 +140,14 @@ body {
 
 .dark-mode:hover {
   background-color: var(--light-purple-color);
-  padding: 0px 7px;
+  padding: 0px 6px;
   cursor: pointer;
   border-radius: 10px;
 }
 
 .light-mode:hover {
   background-color: var(--light-purple-color);
-  padding: 0px 7px;
+  padding: 0px 6px;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -160,7 +167,6 @@ main {
 
 .banner {
   display: flex;
-
   width: 100%;
   height: 507px;
   display: flex;
@@ -170,7 +176,6 @@ main {
 .banner-heading {
   width: 50%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,7 +213,7 @@ main {
   font-size: 4rem;
   font-weight: 800;
   font-family: "Varela Round", sans-serif;
-  color: #5e3ca6;
+  color: var(--title-color);
 }
 
 .banner-img {
@@ -218,16 +223,15 @@ main {
 .banner-caption {
   display: flex;
   flex-direction: column;
-
   width: 90%;
 }
 
 .banner-caption h2 {
-  color: #4a31a5;
+  color: var(--caption-banner-color);
 }
 
 .banner-caption h3 {
-  color: #de5e88;
+  color: var(--light-pink-color);
 }
 
 .button {
@@ -236,19 +240,22 @@ main {
   align-self: flex-start;
   width: 100px;
   height: 40px;
-  background-color: #ffb000;
+  background-color: var(--orangish-yelllow-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white-color);
   border-radius: 10px;
 }
-
+.button a {
+  text-decoration: none;
+  color: var(--white-color);
+}
 .button:hover {
   cursor: pointer;
   width: 120px;
   height: 42px;
-  box-shadow: 0px 0px 20px 3px rgb(242, 197, 113);
+  box-shadow: 0px 0px 20px 3px var(--faded-orange-color);
 }
 
 .banner-img {
@@ -299,8 +306,8 @@ main {
 .tag-icon {
   width: 73px;
   height: 70px;
-  border: #7863c5 1.5px solid;
-  background-color: #ad9ced;
+  border: var(--faded-purple-color) 1.5px solid;
+  background-color: var(--purple-trans-color);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -308,7 +315,7 @@ main {
 }
 
 .tag-icon .tag {
-  color: #231557;
+  color: var(--dark-blue-color);
   font-size: 30px;
 }
 
@@ -334,7 +341,6 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
   width: 100%;
   gap: 10px;
 }
@@ -366,8 +372,6 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* background-color: #231557; */
 }
 
 .footer-icons {
@@ -377,12 +381,16 @@ main {
   width: 100%;
   height: 7rem;
   gap: 20px;
-  background-color: #b2a4ed;
+  background-color: var(--lightest-purple-color);
 }
 
 .footer-icons .social {
   font-size: 1.7rem;
-  color: #28165c;
+  color: var(--royal-blue-color);
+}
+.footer-icons :hover {
+  font-size: 2.3rem;
+  color: var(--body-color);
 }
 
 .footer-line {
@@ -390,25 +398,24 @@ main {
   justify-content: space-between;
   height: 4rem;
   align-items: center;
-  color: #eae1f4;
+  color: var(--footer-color);
   width: 100%;
-  background-color: #462f84;
-  /* bottom: 0px; */
+  background-color: var(--footer-bg-color);
 }
 
 .up {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #cf4573;
+  background-color: var(--up-icon-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .up:hover {
-  color: #cf4573;
-  background-color: #eae1f4;
+  color: var(--up-icon-color);
+  background-color: var(--footer-color);
 }
 
 /* footer css end */
@@ -524,7 +531,7 @@ main {
     display: none;
     height: 100vh;
     position: relative;
-    top:50px;
+    top: 50px;
   }
 
   .left-sidebar .nav-items {

@@ -1,3 +1,19 @@
+:root {
+  --progress-background: rgb(209, 204, 204);
+  --progress-shadow: rgba(57, 56, 56, 0.35);
+  --progress-text-color: rgb(255, 251, 251);
+
+  --info-color: blue;
+  --success-color: green;
+  --warning-color: rgb(249, 228, 4);
+  --danger-color: red;
+
+  --circle-background: #ffcdb2;
+  --circle-inner-background: white;
+  --circle-text-color: black;
+  --circle-gradient-color: #b5838d;
+}
+
 .s-progress {
   width: 600px;
   height: 25px;
@@ -6,15 +22,15 @@
   border: 0px;
   overflow: hidden;
   position: relative;
-  background-color: rgb(209, 204, 204);
-  box-shadow: rgba(57, 56, 56, 0.35) 0px -50px 36px -28px inset;
+  background-color: var(--progress-background);
+  box-shadow: var(--progress-shadow) 0px -50px 36px -28px inset;
 }
 
 .s-progress span {
   height: 100%;
   display: block;
   width: 0;
-  color: rgb(255, 251, 251);
+  color: var(--progress-text-color);
   line-height: 30px;
   position: absolute;
   text-align: end;
@@ -24,29 +40,29 @@
 
 .progress-info span {
   width: 25%;
-  background-color: blue;
+  background-color: var(--info-color);
 }
 .progress-success span {
   width: 70%;
-  background-color: green;
+  background-color: var(--success-color);
 }
 .progress-warning span {
-  background-color: rgb(249, 228, 4);
+  background-color: var(--warning-color);
   width: 90%;
 }
 .progress-danger span {
-  background-color: red;
+  background-color: var(--danger-color);
   width: 50%;
 }
+
 /* progress-2 */
 .progress-container-2 {
   display: flex;
-
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
-  background:white;
+  background: white;
 }
 
 .progress-container-2 .circle {
@@ -55,21 +71,23 @@
   height: 150px;
   margin: 0.5rem;
   border-radius: 50%;
-  background: #ffcdb2;
+  background: var(--circle-background);
   overflow: hidden;
 }
+
 .progress-container-2 .circle.per-25 {
-  background-image: conic-gradient(#b5838d 25%, #ffcdb2 0);
+  background-image: conic-gradient(var(--circle-gradient-color) 25%, var(--circle-background) 0);
 }
 .progress-container-2 .circle.per-50 {
-  background-image: conic-gradient(#b5838d 50%, #ffcdb2 0);
+  background-image: conic-gradient(var(--circle-gradient-color) 50%, var(--circle-background) 0);
 }
 .progress-container-2 .circle.per-75 {
-  background-image: conic-gradient(#b5838d 75%, #ffcdb2 0);
+  background-image: conic-gradient(var(--circle-gradient-color) 75%, var(--circle-background) 0);
 }
 .progress-container-2 .circle.per-100 {
-  background-image: conic-gradient(#b5838d 100%, #ffcdb2 0);
+  background-image: conic-gradient(var(--circle-gradient-color) 100%, var(--circle-background) 0);
 }
+
 .progress-container-2 .circle .inner {
   display: flex;
   justify-content: center;
@@ -80,19 +98,18 @@
   transform: translate(-50%, -50%);
   width: 115px;
   height: 115px;
-  background: white;
+  background: var(--circle-inner-background);
   border-radius: 50%;
   font-size: 1.85em;
   font-weight: 300;
-  color: black;
+  color: var(--circle-text-color);
 }
 
+@media screen and (max-width: 998px)
+
+{.s-progress {
+  width: 450px;}}
 @media screen and (max-width: 468px) {
-  .progress-container-2 .circle {
-     
-    width: 70px;
-    height: 100px;
-  }
   .progress-container-2 .circle {
     width: 70px;
     height: 70px;

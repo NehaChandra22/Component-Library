@@ -19,11 +19,14 @@
     <title>Catalyst UI</title>
   </head>
 
-  <body>
+  <body onload="preLoader()">
+    <div id="loading"></div>
     <!-- navbar start -->
     <nav class="navbar">
       <div class="title">
-        <a href="./index.html"> <h1>CatalystUI</h1></a>
+        <a href="./index.html">
+          <h1>CatalystUI</h1>
+        </a>
       </div>
       <div class="nav-items">
         <div class="items">
@@ -32,7 +35,11 @@
         <div class="items">
           <a href="./documentation.html">Documentation</a>
         </div>
-        <div class="git"><i class="fa-brands fa-square-github"></i></div>
+        <div class="git">
+          <a href="https://github.com/NehaChandra22">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
         <div class="dark-mode">
           <i onclick="darkMode()" class="fa-solid fa-moon"></i>
         </div>
@@ -103,8 +110,9 @@
               interface design. For efficient and accelerated design process.
             </h3>
           </div>
+
           <div class="button">
-            <p>Explore >></p>
+            <a href="./documentation.html"> <p>Explore >></p> </a>
           </div>
         </div>
         <div class="banner-img">
@@ -148,11 +156,25 @@
 
     <footer class="footer">
       <div class="footer-icons">
-        <i class="social fa-brands fa-facebook"></i>
-        <i class="social fa-brands fa-github"></i>
-        <i class="social fa-brands fa-twitter"></i>
-        <i class="social fa-brands fa-linkedin"></i>
-        <i class="social fa-brands fa-instagram"></i>
+        <a
+          href="https://www.facebook.com/profile.php?id=100010471064788&sk=about"
+        >
+          <i class="social fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://github.com/NehaChandra22">
+          <i class="social fa-brands fa-github"></i>
+        </a>
+        <a href=" https://x.com/nehachandra800?s=08 ">
+          <i class="social fa-brands fa-twitter"></i>
+        </a>
+        <a href="#linkdin">
+          <i class="social fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/nehachandra._/?igsh=MTVpMHVybzIwYjE5Mw%3D%3D"
+        >
+          <i class="social fa-brands fa-instagram"></i>
+        </a>
       </div>
       <div class="footer-line">
         <div class=""></div>
