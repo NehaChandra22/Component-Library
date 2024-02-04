@@ -31,19 +31,17 @@
   <ol>
     <li>Include the Catalyst UI stylesheet and JavaScript file in your project:</li>
   </ol>
- <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252Fassets%252Fstyles%252Fcui-use.css%2522%253E%2520%250A%2520%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fcatalyst-ui-component-library.netlify.app%252F%252Fassets%252FJs%252Fscript.js%2522%253E%253C%252Fscript%253E"
-  style="width: 1024px; height: 473px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+ ![image](https://github.com/NehaChandra22/Component-Library/assets/106490240/ee3cbed9-88d3-4d47-942a-2bb56f83c0cb)
+
   <ol >
     <li>Explore the documentation for component usage examples and customization options.</li>
     <li>Start building beautiful and responsive user interfaces with ease! 🌐✨</li>
   </ol>
-    <h2>Live Demo 🌐</h2>
-  <p>Experience Catalyst UI in action with our 🚀 <a href="https://catalyst-ui-component-library.netlify.app/">Live Demo</a>.</p>
-  <h2>Hosted on Netlify 🌐</h2>
+   <h2>Hosted on Netlify 🌐</h2>
   <p>Catalyst UI is hosted on Netlify for easy access and seamless deployment.</p>
 
+    <h2>Live Demo 🌐</h2>
+  <p>Experience Catalyst UI in action with our 🚀 <a href="https://catalyst-ui-component-library.netlify.app/">Live Demo</a>.</p>
+ 
 </body>
 </html>
