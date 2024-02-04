@@ -31,8 +31,8 @@
   <ol>
     <li>Include the Catalyst UI stylesheet and JavaScript file in your project:</li>
   </ol>
- ![image](https://github.com/NehaChandra22/Component-Library/assets/106490240/ee3cbed9-88d3-4d47-942a-2bb56f83c0cb)
-
+ <link rel="stylesheet" href="https://catalyst-ui-component-library.netlify.app/assets/styles/cui-use.css"> 
+  <script src="https://catalyst-ui-component-library.netlify.app//assets/Js/script.js"></script>
   <ol >
     <li>Explore the documentation for component usage examples and customization options.</li>
     <li>Start building beautiful and responsive user interfaces with ease! 🌐✨</li>
@@ -40,7 +40,7 @@
    <h2>Hosted on Netlify 🌐</h2>
   <p>Catalyst UI is hosted on Netlify for easy access and seamless deployment.</p>
 
-    <h2>Live Demo 🌐</h2>
+    <h2> Live Demo 🌐</h2>
   <p>Experience Catalyst UI in action with our 🚀 <a href="https://catalyst-ui-component-library.netlify.app/">Live Demo</a>.</p>
  
 </body>
