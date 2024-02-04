@@ -38,5 +38,5 @@ Start building beautiful and responsive user interfaces with ease! 🌐✨
 Hosted on Netlify 🌐
 Catalyst UI is hosted on Netlify for easy access and seamless deployment.
 
-##Live Demo 🌐
-Experience Catalyst UI in action with our 🚀[Live Demo](https://catalyst-ui-component-library.netlify.app/)Live Demo.
+ ## Live Demo 🌐
+Experience Catalyst UI in action with our 🚀[Live Demo](https://catalyst-ui-component-library.netlify.app/).
