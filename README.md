@@ -8,8 +8,8 @@ Welcome to Catalyst UI, a versatile and lightweight component library built usin
 - 🌙 **Dark Mode Support:** Enjoy a visually appealing and comfortable experience with our built-in dark mode feature. Users can toggle between light and dark themes effortlessly.
 - 🧩 **Easy Integration:** Simply include the Catalyst UI stylesheet and JavaScript file in your project to start using the components. The library is designed for easy integration, saving you time and effort.
 - <img width="945" alt="image" src="https://github.com/NehaChandra22/Component-Library/assets/106490240/455d933e-8b19-4734-93bb-8a865bbcf362">
-<img width="257" alt="image" src="https://github.com/NehaChandra22/Component-Library/assets/106490240/1cf7f293-1a5f-433c-8b79-28c7a3694870">
- **Dark Mode Support:** <img width="947" alt="image" src="https://github.com/NehaChandra22/Component-Library/assets/106490240/eec75c18-90ae-416b-834f-a068067b0bf5">
+-<img width="257" alt="image" src="https://github.com/NehaChandra22/Component-Library/assets/106490240/1cf7f293-1a5f-433c-8b79-28c7a3694870">
+ -**Dark Mode Support:** <img width="947" alt="image" src="https://github.com/NehaChandra22/Component-Library/assets/106490240/eec75c18-90ae-416b-834f-a068067b0bf5">
 
 
 ## Components 🎉
