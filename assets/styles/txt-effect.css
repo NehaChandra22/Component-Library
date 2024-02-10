@@ -1,0 +1,107 @@
+:root {
+  --text-shadow-color: #cc56d7;
+  --glow-text-color: #fff;
+  --glow-start-color: #fff;
+  --glow-end-color: #ff4da6;
+  --transparency-opacity: 0.5;
+  --grad-start-color: #eee;
+  --grad-end-color: #2e8dc0;
+  --flip-text-color: rgb(34, 0, 128);
+  --unicorn-text-family: "Calligraffitti", cursive;
+  --unicorn-text-color: #f9f1cc;
+  --unicorn-shadow-1: #ffb650;
+  --unicorn-shadow-2: #ffd662;
+  --unicorn-shadow-3: #ff80bf;
+  --unicorn-shadow-4: #ef5097;
+  --unicorn-shadow-5: #6868ac;
+  --unicorn-shadow-6: #90b1e0;
+  --anime-start-color: #231557;
+  --anime-mid-color: #44107a;
+  --anime-mid2-color: #ff1361;
+  --anime-end-color: #fff800;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap");
+
+.txt-shadow {
+  text-shadow: 2px 2px var(--text-shadow-color);
+}
+
+.txt-glow {
+  color: var(--glow-text-color);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px var(--glow-start-color), 0 0 20px var(--glow-start-color),
+      0 0 30px var(--glow-start-color), 0 0 40px var(--glow-start-color),
+      0 0 50px var(--glow-start-color), 0 0 60px var(--glow-start-color),
+      0 0 70px var(--glow-start-color);
+  }
+
+  to {
+    text-shadow: 0 0 10px var(--glow-start-color), 0 0 30px var(--glow-end-color),
+      0 0 40px var(--glow-end-color), 0 0 50px var(--glow-end-color),
+      0 0 60px var(--glow-end-color), 0 0 70px var(--glow-end-color),
+      0 0 80px var(--glow-end-color);
+  }
+}
+
+.txt-trans {
+  opacity: var(--transparency-opacity);
+}
+
+.txt-grad {
+  background: -webkit-linear-gradient(var(--grad-start-color), var(--grad-end-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.txt-flip {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: var(--flip-text-color);
+}
+
+.text-unicorn {
+  font-family: var(--unicorn-text-family);
+  font-weight: 700;
+  text-shadow: -15px 5px 20px #ced0d3;
+  transform: translate(-10%, 0%);
+  letter-spacing: -0.1rem;
+  text-align: center;
+  color: var(--unicorn-text-color);
+  text-shadow: 2.5px 2.5px 0px var(--unicorn-shadow-1),
+    5px 5px 0px var(--unicorn-shadow-2),
+    7px 7px 0px var(--unicorn-shadow-3),
+    10px 10px 0px var(--unicorn-shadow-4),
+    13px 13px 0px var(--unicorn-shadow-5),
+    16px 16px 0px var(--unicorn-shadow-6);
+}
+
+.txt-anime {
+  font-family: "Genos", sans-serif;
+  background-image: linear-gradient(
+    -225deg,
+    var(--anime-start-color) 0%,
+    var(--anime-mid-color) 29%,
+    var(--anime-mid2-color) 67%,
+    var(--anime-end-color) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

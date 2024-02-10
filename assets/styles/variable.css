@@ -1,0 +1,32 @@
+:root {
+  --white-color: white;
+  --dark-blue-color: #231557;
+  --light-purple-color: #754bdf;
+  --nav-start-color: rgb(240, 228, 247);
+  --nav-end-color: #3b0898;
+  --dark-pink-color: #ff1361;
+  --body-color: #eae6f0;
+  --purple-color: #44107a;
+  --yellow-color: #fff800;
+  --title-color: #5e3ca6;
+  --caption-banner-color: #4a31a5;
+  --light-pink-color: #de5e88;
+  --orangish-yelllow-color: #ffb000;
+  --faded-orange-color: rgb(242, 197, 113);
+  --faded-purple-color: #7863c5;
+  --purple-trans-color: #ad9ced;
+  --lightest-purple-color: #b2a4ed;
+  --royal-blue-color: #28165c;
+  --footer-color: #eae1f4;
+  --footer-bg-color: #462f84;
+  --up-icon-color: #cf4573;
+  --scrollbar-track-color: #f2e5ed;
+  --scrollbar-thumb-color: #a0a0e9;
+  --scroll-hover-color: #3a1b7b;
+  --menu-list-color: #a4629d;
+  --menu-hover-bgcolor: #f1f4b4;
+  --component-container-color: #3a1b7b;
+  --btn-cont-shimer-bgcolor: #420a60;
+  --txt-container-color: rgb(126, 107, 180);
+  --loader-color:#F7B82C;
+}
